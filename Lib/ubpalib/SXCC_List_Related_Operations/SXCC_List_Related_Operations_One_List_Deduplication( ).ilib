@@ -1,0 +1,85 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_SXCC_List_Related_Operations_One_List_Deduplication( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.1"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "列表相关操作\n（SXCC_List_Related_Operations）\n1.初始化\r\n一维列表去重\n（One_List_Deduplication）\n1.初始化\r\nList_Input_One_Data:一维列表（输入） 默认值:[\"Q\",\"W\",\"Q\"]\r\nStr_Pop_Up_Prompt:是否需要弹窗提示 默认值:\"是\"\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/列表相关操作-组件",
+        "NodeMenuPos": "5002",
+        "NodePinYin": "One_List_Deduplication( ),一维列表去重,一维列表去重\n（One_List_Deduplication）\n1.初始化",
+        "NodeTitle": "一维列表去重",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "一维列表去重",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "一维列表（输入）",
+                "Item_EnumID": "EPC_List_Input_One_Data",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|One_List_Deduplication( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "List_Input_One_Data",
+                "Item_NotPanel": "0",
+                "Item_ParName": "List_Input_One_Data=|[\"Q\",\"W\",\"Q\"]",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "是否需要弹窗提示",
+                "Item_EnumID": "EPC_Str_Pop_Up_Prompt",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|One_List_Deduplication( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Pop_Up_Prompt",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Pop_Up_Prompt=|\"是\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "一维列表去重\n（One_List_Deduplication）\n1.初始化",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-SXCC_List_Related_Operations",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.One_List_Deduplication( %s)",
+        "py_import": "import ubpalib.SXCC_List_Related_Operations.codes.Main"
+    }
+}

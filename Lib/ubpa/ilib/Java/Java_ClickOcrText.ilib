@@ -1,0 +1,360 @@
+{
+    "node_gen": {
+        "ID": "EnumWidget_Java_ClickOcrText",
+        "Class": "EnumWidget_Java_ClickOcrText"
+    },
+    "node_panel": {
+        "NodeTitle": "com.EnumWidget_Java_ClickOcrText.node_panel.NodeTitle1",
+        "NodeDesc": "com.EnumWidget_Java_ClickOcrText.node_panel.NodeDesc",
+        "NodeMenuGroup": "",
+        "NodeIcon": "../../images/NodeWidget/N_Gen_MouseClick.png",
+        "IsPickup": "1",
+        "IsPreview": "1",
+        "PinMSide": "LR",
+        "NodeMenuPos": "1",
+        "NodePinYin": "dianjiocrwenben,djocrwb",
+        "Pins": []
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.EnumWidget_Java_ClickOcrText.node_property.ItemTitle1",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name1",
+                "Item_EnumID": "EP_Gen_WAITFOR",
+                "Item_ParName": "waitfor=|30",
+                "Item_DataType": "int",
+                "Item_Value": "30000",
+                "Item_UnitIcon": "F_icon_(ms)_32px.png",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Item_GroupID": "0"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name2",
+                "Item_EnumID": "EP_INPUT_MOUSE_CLICK",
+                "Item_ParName": "button=",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name2.Items1",
+                        "Value": "'left'"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name2.Items2",
+                        "Value": "'right'"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name2.Items3",
+                        "Value": "'middle'"
+                    }
+                ],
+                "Item_GroupID": "11"
+            },
+			{
+				"Item_Type":"EIT_Combobox",
+				"Item_Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name3",
+				"Item_EnumID":"EP_INPUT_POSITION",
+				"Item_ParName":"curson=",
+				"Item_DataType":"",
+				"Item_Value":"0",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"1",
+				"Items":
+				[
+					{"Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name3.Items1","Value":"'center'"},
+					{"Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name3.Items2","Value":"'lefttop'"},
+					{"Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name3.Items3","Value":"'leftbottom'"},
+					{"Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name3.Items4","Value":"'righttop'"},
+					{"Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name3.Items5","Value":"'rightbottom'"}
+				],
+				"Item_GroupID":"11"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name4",
+				"Item_EnumID":"EP_INPUT_X_OFFSET",
+				"Item_ParName":"offsetX=|0",
+				"Item_DataType":"int",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"region/left",
+				"Item_GroupID":"11"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Java_ClickOcrText.node_property.Item_Name5",
+				"Item_EnumID":"EP_INPUT_Y_OFFSET",
+				"Item_ParName":"offsetY=|0",
+				"Item_DataType":"int",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"region/top",
+				"Item_GroupID":"11"
+			},
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name6",
+                "Item_EnumID": "EP_INPUT_MOUSE_CLICK_TIMES",
+                "Item_ParName": "times=|1",
+                "Item_DataType": "int",
+                "Item_Value": "1",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "11"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name7",
+                "Item_EnumID": "EP_INPUT_COMBOX_CONTINUEONERROR",
+                "Item_ParName": "continue_on_error=",
+                "Item_DataType": "",
+                "Item_Value": "1",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name7.Items1",
+                        "Value": "'continue'"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name7.Items2",
+                        "Value": "'break'"
+                    }
+                ],
+                "Item_GroupID": "11"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name8",
+                "Item_EnumID": "EP_WINDOW_PROGRAM",
+                "Item_ParName": "program=r|None",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "1",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/program",
+                "Item_GroupID": "15"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name9",
+                "Item_EnumID": "EP_WINDOW_TITLE",
+                "Item_ParName": "title=r|None",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "1",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/title",
+                "Item_GroupID": "15"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name10",
+                "Item_EnumID": "EP_WINDOW_CLASS",
+                "Item_ParName": "className=r|None",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "1",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/className",
+                "Item_GroupID": "15"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name11",
+                "Item_EnumID": "EP_CONTROL_JAVA_PROPERTY",
+                "Item_ParName": "selector=|[{},{}]",
+                "Item_DataType": "list",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/hierarchy",
+                "Item_GroupID": "15"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name12",
+                "Item_EnumID": "EP_target_text",
+                "Item_ParName": "target_text=|None",
+                "Item_DataType": "",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_RowNum": "4",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name13",
+                "Item_EnumID": "EP_rule",
+                "Item_ParName": "rule=|None",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name13.Items1",
+                        "Value": "'contain'"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name13.Items2",
+                        "Value": "'equal'"
+                    }
+                ]
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name14",
+                "Item_EnumID": "EP_target_index",
+                "Item_ParName": "target_index=|None",
+                "Item_DataType": "",
+                "Item_Value": "1",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_RowNum": "4",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_ComboboxItems",
+                "Item_ParName": "ocr_engine=",
+                "Item_Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name15",
+                "Item_Desc": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Desc15",
+                "Item_EnumID": "EPC_ocr_engine",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name15.Items0.Name",
+                        "Value": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name15.Items0.Value"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name15.Items1.Name",
+                        "Value": "com.EnumWidget_Java_ClickOcrText.node_property.Item_Name15.Items1.Value"
+                    }
+                ],
+                "Item_GroupID": "12"
+            },
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java.node_property.jvmprogram",
+                "Item_EnumID": "EP_CONTROL_JVMPROGRAM",
+                "Item_ParName": "jvmprogram=",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/jvmprogram",
+                "Item_GroupID": "12"
+            },            
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java.node_property.jvmtitle",
+                "Item_EnumID": "EP_CONTROL_JVMTITLE",
+                "Item_ParName": "jvmtitle=",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/jvmtitle",
+                "Item_GroupID": "12"
+            },             
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java.node_property.jvmclassName",
+                "Item_EnumID": "EP_CONTROL_JVMCLASSNAME",
+                "Item_ParName": "jvmclassName=",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/jvmclassName",
+                "Item_GroupID": "12"
+            },  
+            {
+                "Item_Type": "EIT_Preview",
+                "Item_Name": "",
+                "Item_EnumID": "EP_SNAP_SHOT_PREVIEW",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Item_uisubstance": "snapshot/snapshot_preview",
+                "Item_GroupID": "13"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_PyCode",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.ijava as ijava",
+        "py_fun": "ijava.click_ocr_text(%s)"
+    }
+}

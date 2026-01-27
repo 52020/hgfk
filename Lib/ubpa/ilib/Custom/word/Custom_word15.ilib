@@ -1,0 +1,45 @@
+{
+    "node_gen": {
+        "ID": "Custom_word15",
+        "Class": "Custom_word15"
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_word15.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_word15.node_panel.NodeDesc",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_Application.NG_Word",
+        "NodeIcon": "../../../images/NodeWidget/N_icon_assembly_word_16px.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide": "LR",
+        "NodeMenuPos": "151",
+        "NodePinYin": "jianqie,jq"
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_word15.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "word_obj=",
+                "Item_Name": "com.Custom_word15.node_property.Item_Name",
+                "Item_Desc": "com.Custom_word15.node_property.Item_Desc",
+                "Item_EnumID": "EIT_word_obj",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.iword as iword",
+        "py_fun": "iword.cut_selected_text(%s)"
+    }
+}

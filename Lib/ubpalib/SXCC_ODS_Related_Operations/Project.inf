@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2124-12-30",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "ODS系统相关操作（谷歌浏览器）\n（SXCC_ODS_Related_Operations）\n1.初始化",
+        "ProName": "SXCC_ODS_Related_Operations",
+        "ProVer": "1.0.0.3",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "ODS系统相关操作（谷歌浏览器）\n（SXCC_ODS_Related_Operations）\n1.初始化",
+        "ProEDType": "2",
+        "ProName": "SXCC_ODS_Related_Operations",
+        "ProVer": "1.0.0.3",
+        "RPath": "",
+        "UserID": ""
+    }
+}

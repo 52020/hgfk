@@ -1,0 +1,36 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_VarGItem",
+		"Class":"EnumWidget_VarGItem"
+	},
+	"node_property":
+	{
+		"HasGenItem":"0",
+		"ItemTitle":"com.EnumWidget_VarGItem.node_property.ItemTitle1",
+		"Items":
+		[
+			{
+				"Item_Type":"EIT_LineeditFreesz",
+				"Item_Name":"com.EnumWidget_VarGItem.node_property.Item_Name1",
+				"Item_EnumID":"varname",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"12"
+			},
+			{
+				"Item_Type":"EIT_VarObjConfig",
+				"Item_EnumID":"EP_VAROBJCONFIG",
+				"Item_NotPanel":"1",
+				"Item_GroupID":"12",
+        "Items":
+				[
+				]
+			}
+		]
+	}
+}

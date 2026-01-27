@@ -1,0 +1,85 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_SXCC_Close_Process_SXCC_Close_Process( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.0"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "关闭相关进程列表\n（SXCC_Close_Process）\n1.初始化\r\n关闭相关进程列表\n（SXCC_Close_Process）\n1.初始化\r\nList_Process:相关进程列表 默认值:[]\r\nStr_Pop_Up_Prompt:是否需要弹窗提示 默认值:\"是\"\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/关闭相关进程列表-组件",
+        "NodeMenuPos": "5002",
+        "NodePinYin": "SXCC_Close_Process( ),关闭相关进程列表,关闭相关进程列表\n（SXCC_Close_Process）\n1.初始化",
+        "NodeTitle": "关闭相关进程列表",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "关闭相关进程列表",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "相关进程列表",
+                "Item_EnumID": "EPC_List_Process",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Close_Process( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "List_Process",
+                "Item_NotPanel": "0",
+                "Item_ParName": "List_Process=|[]",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "是否需要弹窗提示",
+                "Item_EnumID": "EPC_Str_Pop_Up_Prompt",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Close_Process( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Pop_Up_Prompt",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Pop_Up_Prompt=|\"是\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "关闭相关进程列表\n（SXCC_Close_Process）\n1.初始化",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-SXCC_Close_Process",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.SXCC_Close_Process( %s)",
+        "py_import": "import ubpalib.SXCC_Close_Process.codes.Main"
+    }
+}

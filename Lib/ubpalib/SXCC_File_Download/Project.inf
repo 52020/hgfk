@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2125-06-06",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "文件下载设置保存到指定绝对路径\n（SXCC_File_Download）\n1.添加动态加载另存为窗口功能",
+        "ProName": "SXCC_File_Download",
+        "ProVer": "1.0.0.2",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "文件下载设置保存到指定绝对路径\n（SXCC_File_Download）\n1.添加动态加载另存为窗口功能",
+        "ProEDType": "2",
+        "ProName": "SXCC_File_Download",
+        "ProVer": "1.0.0.2",
+        "RPath": "",
+        "UserID": ""
+    }
+}

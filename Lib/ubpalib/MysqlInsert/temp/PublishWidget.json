@@ -1,0 +1,15 @@
+{
+    "FlowDescAsName": false,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": true,
+            "Item_DispName": "Main",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "MysqlInsert-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.3",
+    "VarDescAsName": false
+}

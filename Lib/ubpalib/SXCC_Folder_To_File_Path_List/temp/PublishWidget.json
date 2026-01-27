@@ -1,0 +1,20 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": false,
+            "Item_DispName": "Main",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_Folder_To_File_Path_List( )": {
+            "Item_Checked": true,
+            "Item_DispName": "获取文件夹中的文件绝对路径列表",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "获取文件夹中的文件绝对路径列表-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.0",
+    "VarDescAsName": true
+}

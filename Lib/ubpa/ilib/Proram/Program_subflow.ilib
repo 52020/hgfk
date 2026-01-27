@@ -1,0 +1,58 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Program_subflow",
+		"Class":"EnumWidget_Program_subflow"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Program_subflow.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Program_subflow.node_panel.NodeDesc",
+		"NodeMenuGroup":"",
+		"NodeIcon":"../../images/NodeWidget/N_FlowParam.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"1",
+		"NodePinYin":"ziliucheng,zlc",
+		"Pins":
+		[
+		],
+    "Templates":
+		[
+      {
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret|%1",
+				"Pin_ItemName":"com.EnumWidget_Program_subflow.node_panel.Pin_ItemName",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+        ]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"",
+		"Items":
+		[
+      {
+			"Item_Type":"EIT_Flow",
+			"Item_EnumID":"EP_FLOW",
+			"Item_NotPanel":"1",
+			"Item_GroupID":"21",
+      "Items":
+      [
+      
+      ]
+      }
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_SubFlow",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "",
+		"py_fun": "self.%s(%s)",
+		"py_par": ""
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": true,
+            "Item_DispName": "区域写入excel",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "应用",
+    "MenuSecond": "Excel",
+    "PublishType": "Local",
+    "PublishVersion": "1.0.0.0",
+    "VarDescAsName": true
+}

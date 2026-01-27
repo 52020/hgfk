@@ -1,0 +1,169 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Query_download_files",
+		"Class":"EnumWidget_Query_download_files"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Query_download_files.node_panel.NodeTitle",
+		"NodeDesc":"com.EnumWidget_Query_download_files.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_InterfaceAutomation.NG_Control",
+		"NodeIcon":"../../images/NodeWidget/N_Web_SreachLoad.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"12",
+		"NodePinYin":"chromechaxunxiazaiwenjian,chromecxxzwj,chaxunxiazaiwenjian,cxxzwj",
+		"Pins":
+		[
+			{
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret1",
+				"Pin_ItemName":"com.EnumWidget_Query_download_files.node_panel.Pin_ItemName",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Query_download_files.node_panel.ItemTitle",
+		"Items":
+		[
+			{
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "query_mode=",
+                "Item_Name": "com.EnumWidget_Query_download_files.node_property.Item_Name",
+                "Item_Desc": "com.EnumWidget_Query_download_files.node_property.Item_Desc",
+                "Item_EnumID": "EPC_query_mode",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Query_download_files.node_property.Item_Name.name1",
+                        "Value": "0"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Query_download_files.node_property.Item_Name.name3",
+                        "Value": "2"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "query_field=",
+                "Item_Name": "com.EnumWidget_Query_download_files.node_property.Item_Name1",
+                "Item_Desc": "com.EnumWidget_Query_download_files.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_query_field",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Query_download_files.node_property.Item_Name1.name1",
+                        "Value": "'filename'"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Query_download_files.node_property.Item_Name1.name2",
+                        "Value": "'filepath'"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "filename=",
+                "Item_Name": "com.EnumWidget_Query_download_files.node_property.Item_Name2",
+                "Item_Desc": "com.EnumWidget_Query_download_files.node_property.Item_Desc2",
+                "Item_EnumID": "EIT_filename",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "start_time=",
+                "Item_Name": "com.EnumWidget_Query_download_files.node_property.Item_Name3",
+                "Item_Desc": "com.EnumWidget_Query_download_files.node_property.Item_Desc3",
+                "Item_EnumID": "EIT_start_time",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "end_time=",
+                "Item_Name": "com.EnumWidget_Query_download_files.node_property.Item_Name4",
+                "Item_Desc": "com.EnumWidget_Query_download_files.node_property.Item_Desc4",
+                "Item_EnumID": "EIT_end_time",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },                        
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "return_mode=",
+                "Item_Name": "com.EnumWidget_Query_download_files.node_property.Item_Name5",
+                "Item_Desc": "com.EnumWidget_Query_download_files.node_property.Item_Desc5",
+                "Item_EnumID": "EPC_return_mode",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Query_download_files.node_property.Item_Name5.name1",
+                        "Value": "com.EnumWidget_Query_download_files.node_property.Item_Name5.value1"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Query_download_files.node_property.Item_Name5.name2",
+                        "Value": "com.EnumWidget_Query_download_files.node_property.Item_Name5.value2"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            }
+          
+            
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.ichrome_firefox as ichrome_firefox",
+		"py_fun": "ichrome_firefox.query_download_files(%s)"
+	}
+}

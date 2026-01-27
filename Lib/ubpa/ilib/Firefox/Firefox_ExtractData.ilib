@@ -1,0 +1,270 @@
+{
+    "node_gen": {
+        "ID": "EnumWidget_Firefox_ExtractData",
+        "Class": "EnumWidget_Firefox_ExtractData"
+    },
+    "node_panel": {
+        "NodeTitle": "com.EnumWidget_Firefox_ExtractData.node_panel.NodeTitle1",
+        "NodeDesc": "com.EnumWidget_Firefox_ExtractData.node_panel.NodeDesc",
+        "NodeMenuGroup": "",
+        "NodeIcon": "../../images/NodeWidget/N_Gen_GetTable.png",
+        "IsPickup": "1",
+        "IsPreview": "1",
+        "PinMSide": "LR",
+        "NodeMenuPos": "1",
+        "NodePickupType": "ExtractData",
+        "NodePinYin": "jiegouhuashujuzhuaqu,jiegouhuazhuaqu,jghsjzq,jghzq",
+        "Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.EnumWidget_Firefox_ExtractData.node_panel.Pin_ItemName",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.EnumWidget_Firefox_ExtractData.node_property.ItemTitle1",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name1",
+                "Item_EnumID": "EP_CONTROL_CHROME_TITLE",
+                "Item_ParName": "title=r|None",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/title",
+                "Item_GroupID": "15"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name2",
+                "Item_EnumID": "EP_CONTROL_CHROME_URL",
+                "Item_ParName": "url=r|None",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/url",
+                "Item_GroupID": "15"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name3",
+                "Item_EnumID": "EP_ExtractData",
+                "Item_ParName": "metaData=",
+                "Item_DataType": "",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "metadata",
+                "Item_GroupID": "11"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name4",
+                "Item_EnumID": "EP_CONTROL_CHROME_ATTRMAP",
+                "Item_ParName": "attrMap=|None",
+                "Item_DataType": "",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_RowNum": "4",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/attrMap",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Checkbox",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name5",
+                "Item_EnumID": "EP_CONTROL_CHROME_BUTTTON_RUN_MODE",
+                "Item_ParName": "run_mode=",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Item_GroupID": "71",
+				"Items": [
+					{
+                        "Item_EnumID": "EP_CONTROL_IMAGE"
+                    },
+                    {
+                        "Item_EnumID": "EP_CONTROL_IMAGE_FUZZY_SIMILARITY"
+                    }                    
+                ]
+            },
+            {
+                "Item_Type": "EIT_Checkbox",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name6",
+                "Item_EnumID": "EP_CONTROL_CHROME_BUTTTON_ScrollIntoView",
+                "Item_ParName": "scroll_view=|'no'",
+                "Item_DataType": "string",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "71"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name7",
+                "Item_EnumID": "EP_CONTROL_CHROME_BUTTTON_ATTRMAP",
+                "Item_ParName": "page_btn_attrMap=",
+                "Item_DataType": "",
+                "Item_Value": "",
+                "Item_ExtCheck": "1",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "pageDownData/attrMap",
+                "Item_GroupID": "71",
+				"Items": [
+					{
+                        "Item_EnumID": "EP_CONTROL_CHROME_BUTTTON_RUN_MODE"
+                    },
+                    {
+                        "Item_EnumID": "EP_CONTROL_CHROME_BUTTTON_ScrollIntoView"
+                    }               
+                ]
+            },
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Img_MouseClick.node_property.Item_Name8",
+				"Item_EnumID":"EP_CONTROL_IMAGE",
+				"Item_ParName":"image=r|None",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"1",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"pageDownData/snapshot/image_file_name",
+				"Item_GroupID":"71"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Img_MouseClick.node_property.Item_Name12",
+				"Item_EnumID":"EP_CONTROL_IMAGE_FUZZY_SIMILARITY",
+				"Item_ParName":"confidence=|0.85",
+				"Item_DataType":"float",
+				"Item_Value":"0.85",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"71"
+			},
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name8",
+                "Item_EnumID": "EP_CONTROL_CHROME_TABLE_setting",
+                "Item_ParName": "columns_setting=",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "extractData",
+                "Item_GroupID": "81"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name9",
+                "Item_EnumID": "EP_CONTROL_CHROME_limit",
+                "Item_ParName": "extract_mode=r|None",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "rowsetIndex",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name9.Items1",
+                        "Value": "0"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name9.Items2",
+                        "Value": "1"
+                    }
+                ],
+                "Item_GroupID": "91"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name10",
+                "Item_EnumID": "EP_CONTROL_CHROME_max_size",
+                "Item_ParName": "max_limit=",
+                "Item_DataType": "int",
+                "Item_Value": "1000",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "91",
+                "Item_uisubstance": "maxrow"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Firefox_ExtractData.node_property.Item_Name11",
+                "Item_EnumID": "EP_CONTROL_CHROME_BUTTON_sleep",
+                "Item_ParName": "page_btn_sleep=|10000",
+                "Item_DataType": "int",
+                "Item_Value": "10000",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "91"
+            },
+            {
+                "Item_Type": "EIT_Preview",
+                "Item_Name": "",
+                "Item_EnumID": "EP_SNAP_SHOT_PREVIEW",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Item_uisubstance": "snapshot/snapshot_preview",
+                "Item_GroupID": "13"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_PyCode",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.ichrome_firefox as ichrome_firefox",
+        "py_fun": "ichrome_firefox.extract_data_firefox(%s)"
+    }
+}

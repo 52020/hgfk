@@ -1,0 +1,90 @@
+{
+    "node_gen": {
+        "Class": "EnumWidget_Cloud_PO_NewProject2",
+        "ID": "EnumWidget_Cloud_PO_NewProject2"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "NewProject2",
+        "NodeIcon": "../../images/NodeWidget/N_Cloud_UploadFile.png",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_Server.NG_Cloud_PO",
+        "NodeMenuPos": "1",
+        "NodePinYin": "liuchengbianpai,liuchengrenwu,lcbp,lcrw",
+        "NodeTitle": "NewProject2",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "com.EnumWidget_Cloud_PO_ProcessJob.node_panel.Pin_ItemName1",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.EnumWidget_Cloud_PO_ProcessJob.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_EnumID": "ProcessJob_proc_id",
+                "Item_GroupID": "12|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "com.EnumWidget_Cloud_PO_ProcessJob.node_property.proc_id",
+                "Item_NotPanel": "0",
+                "Item_ParName": "proc_id=",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": "77"
+            },
+            {
+                "Item_DataType": "",
+                "Item_EnumID": "ProcessJob_proc_code",
+                "Item_GroupID": "12|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "com.EnumWidget_Cloud_PO_ProcessJob.node_property.proc_code",
+                "Item_NotPanel": "0",
+                "Item_ParName": "proc_code=",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": "'NewProject2'"
+            },
+            {
+                "Item_DataType": "",
+                "Item_EnumID": "ProcessJob_proc_version",
+                "Item_GroupID": "12|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "com.EnumWidget_Cloud_PO_ProcessJob.node_property.proc_version",
+                "Item_NotPanel": "0",
+                "Item_ParName": "proc_version=",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": "'1.0.0.0'"
+            },
+            {
+                "Item_DataType": "",
+                "Item_EnumID": "ProcessJob_timeout",
+                "Item_GroupID": "12|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "com.EnumWidget_Cloud_PO_ProcessJob.node_property.timeout",
+                "Item_NotPanel": "0",
+                "Item_ParName": "timeout=",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": "30"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_BpMsPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_fun": "iplatform.process_job(%s)",
+        "py_import": "from ubpa import iplatform"
+    }
+}

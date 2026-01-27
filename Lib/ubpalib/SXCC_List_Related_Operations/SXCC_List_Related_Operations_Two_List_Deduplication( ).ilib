@@ -1,0 +1,85 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_SXCC_List_Related_Operations_Two_List_Deduplication( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.1"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "列表相关操作\n（SXCC_List_Related_Operations）\n1.初始化\r\n二维列表去重\n（One_List_Deduplication）\n1.修改去重方式\r\nList_Input_Two_Data:二维列表（输入） 默认值:[[1, 2], [3, 4], [1, 2], [5, 6]]\r\nStr_Pop_Up_Prompt:是否需要弹窗提示 默认值:\"是\"\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/列表相关操作-组件",
+        "NodeMenuPos": "5003",
+        "NodePinYin": "Two_List_Deduplication( ),二维列表去重,二维列表去重\n（One_List_Deduplication）\n1.修改去重方式",
+        "NodeTitle": "二维列表去重",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "二维列表去重",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "二维列表（输入）",
+                "Item_EnumID": "EPC_List_Input_Two_Data",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|Two_List_Deduplication( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "List_Input_Two_Data",
+                "Item_NotPanel": "0",
+                "Item_ParName": "List_Input_Two_Data=|[[1, 2], [3, 4], [1, 2], [5, 6]]",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "是否需要弹窗提示",
+                "Item_EnumID": "EPC_Str_Pop_Up_Prompt",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|Two_List_Deduplication( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Pop_Up_Prompt",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Pop_Up_Prompt=|\"是\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "二维列表去重\n（One_List_Deduplication）\n1.修改去重方式",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-SXCC_List_Related_Operations",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.Two_List_Deduplication( %s)",
+        "py_import": "import ubpalib.SXCC_List_Related_Operations.codes.Main"
+    }
+}

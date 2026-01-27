@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2124-04-24",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "获取操作系统信息\n（SXCC_System_Information）\n1.初始化",
+        "ProName": "SXCC_System_Information",
+        "ProVer": "1.0.0.0",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "获取操作系统信息\n（SXCC_System_Information）\n1.初始化",
+        "ProEDType": "2",
+        "ProName": "SXCC_System_Information",
+        "ProVer": "1.0.0.0",
+        "RPath": "",
+        "UserID": ""
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "node_gen": {
+        "ID": "Custom_excel0014",
+        "CustomNo": "excel0014",
+        "Class": ""
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_excel0014.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_excel0014.node_panel.NodeDesc",
+        "NodeMenuGroup":"com.menu.widgetgroup.NG_Application.NG_Excel",
+        "NodeIcon": "../../../images/NodeWidget/N_Excel.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide":"LR",
+		"NodeMenuPos":"221",
+        "NodePinYin": "gongzuobiaochongmingming,gzbcmm",
+        "Pins": [{
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret1",
+				"Pin_ItemName":"com.Custom_excel0014.node_panel.Pin_ItemName",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}]
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_excel0014.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_File",
+                "Item_ParName": "path=",
+                "Item_Name": "com.Custom_excel0014.node_property.path.Item_Name",
+                "Item_Desc": "com.Custom_excel0014.node_property.path.Item_Desc",
+                "Item_EnumID": "EPC_path",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "*.xls;*.xlsx",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "sheet=|0",
+                "Item_Name": "com.Custom_excel0014.node_property.sheet.Item_Name",
+                "Item_Desc": "com.Custom_excel0014.node_property.sheet.Item_Desc",
+                "Item_EnumID": "EPC_sheet",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "new_name=|''",
+                "Item_Name": "com.Custom_excel0014.node_property.new_name.Item_Name",
+                "Item_Desc": "com.Custom_excel0014.node_property.new_name.Item_Desc",
+                "Item_EnumID": "EPC_new_name",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "file_type=|'excel'",
+                "Item_Name": "com.Custom_excel0014.node_property.file_type.Item_Name",
+                "Item_Desc": "com.Custom_excel0014.node_property.file_type.Item_Desc",
+                "Item_EnumID": "EPC_file_type",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_excel0014.node_property.file_type.Item_Name.name1",
+                        "Value": "com.Custom_excel0014.node_property.file_type.Item_Name.value1"
+                    },
+                    {
+                        "Name": "com.Custom_excel0014.node_property.file_type.Item_Name.name2",
+                        "Value": "com.Custom_excel0014.node_property.file_type.Item_Name.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "dl_funs": "RPANodes_GenPyCodes",
+        "py_import": "import ubpa.iexcel as iexcel",
+        "py_fun": "iexcel.rename_sheet(%s)"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2123-11-13",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "",
+        "ProName": "MysqlInsert",
+        "ProVer": "1.0.0.3",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "",
+        "ProEDType": "2",
+        "ProName": "MysqlInsert",
+        "ProVer": "1.0.0.3",
+        "RPath": "",
+        "UserID": ""
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_MysqlInsert_Production_MysqlInsert_Production( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.0"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "效率统计组件（生产环境）\r\nMysqlInsert_Production-组件-v3.0：\n参数statusFlg  类型int（0：流程开始，1：流程结束）\n\n\r\nstatusFlg:状态描述0：开始，1：结束 默认值:\r\nprocessName:流程名称 默认值:\r\nshoudDict:可选参数字典 默认值:{}\r\ndepartmentName:省分部门名称/部门名称 默认值:\r\nrunCount:运行次数 默认值:1\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/MysqlInsert_Production-组件",
+        "NodeMenuPos": "5002",
+        "NodePinYin": "MysqlInsert_Production( ),MysqlInsert_Production,MysqlInsert_Production-组件-v3.0：\n参数statusFlg  类型int（0：流程开始，1：流程结束）\n\n",
+        "NodeTitle": "MysqlInsert_Production",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "MysqlInsert_Production",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "状态描述0：开始，1：结束",
+                "Item_EnumID": "EPC_statusFlg",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|MysqlInsert_Production( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "statusFlg",
+                "Item_NotPanel": "0",
+                "Item_ParName": "statusFlg=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "流程名称",
+                "Item_EnumID": "EPC_processName",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|MysqlInsert_Production( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "processName",
+                "Item_NotPanel": "0",
+                "Item_ParName": "processName=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "可选参数字典",
+                "Item_EnumID": "EPC_shoudDict",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|MysqlInsert_Production( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "shoudDict",
+                "Item_NotPanel": "0",
+                "Item_ParName": "shoudDict=|{}",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "省分部门名称/部门名称",
+                "Item_EnumID": "EPC_departmentName",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|MysqlInsert_Production( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "departmentName",
+                "Item_NotPanel": "0",
+                "Item_ParName": "departmentName=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "运行次数",
+                "Item_EnumID": "EPC_runCount",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|MysqlInsert_Production( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "runCount",
+                "Item_NotPanel": "0",
+                "Item_ParName": "runCount=|1",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "MysqlInsert_Production-组件-v3.0：\n参数statusFlg  类型int（0：流程开始，1：流程结束）\n\n",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-MysqlInsert_Production",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.MysqlInsert_Production( %s)",
+        "py_import": "import ubpalib.MysqlInsert_Production.codes.Main"
+    }
+}

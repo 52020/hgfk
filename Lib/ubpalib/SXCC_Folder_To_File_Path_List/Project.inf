@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2124-04-25",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "获取文件夹中的文件绝对路径列表\n（SXCC_Folder_To_File_Path_List）\n1.初始化",
+        "ProName": "SXCC_Folder_To_File_Path_List",
+        "ProVer": "1.0.0.0",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "获取文件夹中的文件绝对路径列表\n（SXCC_Folder_To_File_Path_List）\n1.初始化",
+        "ProEDType": "2",
+        "ProName": "SXCC_Folder_To_File_Path_List",
+        "ProVer": "1.0.0.0",
+        "RPath": "",
+        "UserID": ""
+    }
+}

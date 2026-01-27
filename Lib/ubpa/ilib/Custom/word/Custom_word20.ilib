@@ -1,0 +1,230 @@
+{
+    "node_gen": {
+        "ID": "EnumWidget_Word_Custom_word20",
+        "Class": "EnumWidget_Word_Custom_word20"
+    },
+    "node_panel": {
+        "NodeTitle": "com.EnumWidget_Word_Custom_word20.node_panel.NodeTitle",
+        "NodeDesc": "com.EnumWidget_Word_Custom_word20.node_panel.NodeDesc",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_Application.NG_Word",
+        "NodeIcon": "../../../images/NodeWidget/N_icon_assembly_word_16px.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide": "LR",
+        "NodeMenuPos": "201",
+        "NodePinYin": "wenzipiliangtihuan,wzplth"
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.EnumWidget_Word_Custom_word20.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "word_obj=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items0.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items0.Item_Desc",
+                "Item_EnumID": "EIT_Document_object",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "old_str=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items1.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items1.Item_Desc",
+                "Item_EnumID": "EIT_Match_string",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "new_str=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items2.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items2.Item_Desc",
+                "Item_EnumID": "EIT_Replacement_string",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+				"Item_Type":"EIT_ComboboxItems",
+				"Item_ParName":"mode=",
+				"Item_Name":"com.EnumWidget_Word_Custom_word20.node_property.Items_Match_mode_Item_Name",
+				"Item_Desc":"com.EnumWidget_Word_Custom_word20.node_property.Items_Match_mode_Item_Desc",
+				"Item_EnumID":"EPC_match_mode",
+				"Item_Value":"0",
+				"Item_DataType":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Items":[
+					{
+						"Name":"com.EnumWidget_Word_Custom_word20.node_property.Items_Match_mode_Items_Normal_Name",
+						"Value":"0", 
+						"SubItems":
+						[
+							{
+								"Item_Type": "EIT_Combobox",
+								"Item_ParName": "match_case=",
+								"Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items3.Item_Name",
+								"Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items3.Item_Desc",
+								"Item_EnumID": "ELT_Case_sensitive",
+								"Item_Value": "0",
+								"Item_DataType": "bool",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "12",
+								"Items": [
+									{
+										"Name": "com.EnumWidget_Word_Custom_word20.node_property.Items3.Item0",
+										"Value": "False"
+									},
+									{
+										"Name": "com.EnumWidget_Word_Custom_word20.node_property.Items3.Item1",
+										"Value": "True"
+									}
+									]
+							},							
+							{
+								"Item_Type": "EIT_Combobox",
+								"Item_ParName": "match_whole_word=",
+								"Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items4.Item_Name",
+								"Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items4.Item_Desc",
+								"Item_EnumID": "ELT_whole_word",
+								"Item_Value": "0",
+								"Item_DataType": "bool",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "12",
+								"Items": [
+									{
+										"Name": "com.EnumWidget_Word_Custom_word20.node_property.Items4.Item0",
+										"Value": "False"
+									},
+									{
+										"Name": "com.EnumWidget_Word_Custom_word20.node_property.Items4.Item1",
+										"Value": "True"
+									}
+								]
+							}
+						]
+					},
+					{
+						"Name":"com.EnumWidget_Word_Custom_word20.node_property.Items_Match_mode_Items_WildCard_Name",
+						"Value":"1"						
+					}
+				],
+				"Item_GroupID":"12"
+			},
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "forward=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items6.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items6.Item_Desc",
+                "Item_EnumID": "ELT_Look_backward",
+                "Item_Value": "1",
+                "Item_DataType": "bool",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Word_Custom_word20.node_property.Items6.Item0",
+                        "Value": "False"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Word_Custom_word20.node_property.Items6.Item1",
+                        "Value": "True"
+                    }
+                ]
+            },
+			{
+				"Item_Type": "EIT_Combobox",
+				"Item_ParName": "whether_loop=",
+				"Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items8.Item_Name",
+				"Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items8.Item_Desc",
+				"Item_EnumID": "ELT_whether_Loop",
+				"Item_Value": "0",
+				"Item_DataType": "bool",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "0",
+				"Item_GroupID": "12",
+				"Items": [
+					{
+						"Name": "com.EnumWidget_Word_Custom_word20.node_property.Items8.Item0",
+						"Value": "False"
+					},
+					{
+						"Name": "com.EnumWidget_Word_Custom_word20.node_property.Items8.Item1",
+						"Value": "True"
+					}
+					]
+			},							
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "replace_type=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word20.node_property.Items7.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word20.node_property.Items7.Item_Desc",
+                "Item_EnumID": "ELT_Replacement_method",
+                "Item_Value": "0",
+                "Item_DataType": "bool",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Word_Custom_word20.node_property.Items7.Item0",
+                        "Value": "1"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Word_Custom_word20.node_property.Items7.Item1",
+                        "Value": "2"
+                    }
+                ]
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.iword as iword",
+        "py_fun": "iword.batch_replace_text(%s)"
+    }
+}

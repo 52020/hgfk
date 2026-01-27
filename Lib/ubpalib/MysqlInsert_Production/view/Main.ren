@@ -1,0 +1,87 @@
+{
+    "NodeList": [
+        {
+            "NodePh": 30,
+            "NodePro": {
+            },
+            "NodePw": 164,
+            "NodePx": 100,
+            "NodePy": 209,
+            "NodeSubType": "EnumWidget_Begin",
+            "NodeTag": "202302271636184274",
+            "NodeTitle": "开始"
+        },
+        {
+            "NodePh": 28,
+            "NodePro": {
+                "EP_Gen": {
+                    "NodeMName": "{\"val\":\"\"}",
+                    "inpar_Order": "{\"val\":\"\"}",
+                    "inpar_helpdesc": "{\"val\":\"\"}",
+                    "inpar_required": "{\"val\":\"ZmFsc2U=\"}",
+                    "inputpar": "{\"val\":\"RUlUX1Byb0lucHV0c19QYXNzd29yZA==\"}",
+                    "varRefType": "{\"val\":\"\"}",
+                    "vardef": "{\"val\":\"\"}",
+                    "vardesc": "{\"val\":\"\"}",
+                    "varname": "{\"val\":\"Z3ZfMg==\"}",
+                    "vartag": "{\"val\":\"MjAyMzAzMjgxNDMyMzUzODUxNDc=\"}",
+                    "vartype": "{\"val\":\"RUlUX1Byb1Zhcl9JbnB1dERhdGE=\"}"
+                }
+            },
+            "NodePw": 164,
+            "NodePx": 401,
+            "NodePy": 152,
+            "NodeSubType": "EnumWidget_VarGGet",
+            "NodeTag": "20230328143250693148",
+            "NodeTitle": "gv_2"
+        },
+        {
+            "NodePh": 28,
+            "NodePro": {
+                "EP_Gen": {
+                    "NodeMName": "{\"val\":\"\"}",
+                    "inpar_Order": "{\"val\":\"\"}",
+                    "inpar_helpdesc": "{\"val\":\"\"}",
+                    "inpar_required": "{\"val\":\"ZmFsc2U=\"}",
+                    "inputpar": "{\"val\":\"RUlUX1Byb0lucHV0c19TdHJpbmc=\"}",
+                    "varRefType": "{\"val\":\"\"}",
+                    "vardef": "{\"val\":\"\"}",
+                    "vardesc": "{\"val\":\"\"}",
+                    "varname": "{\"val\":\"Z3ZfMQ==\"}",
+                    "vartag": "{\"val\":\"MjAyMzAzMjgxNDI5NTcyMTQy\"}",
+                    "vartype": "{\"val\":\"RUlUX1Byb1Zhcl9JbnB1dERhdGE=\"}"
+                }
+            },
+            "NodePw": 164,
+            "NodePx": 401,
+            "NodePy": 102,
+            "NodeSubType": "EnumWidget_VarGGet",
+            "NodeTag": "20230328143131445137",
+            "NodeTitle": "gv_1"
+        },
+        {
+            "NodePh": 150,
+            "NodePro": {
+                "EP_CONTROL": {
+                    "EP_CONTROL_TIMEOUT": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_CONTROL_TITLE": "{\n    \"val\": \"\"\n}\n"
+                },
+                "EP_Gen": {
+                    "EP_Gen_AFTERDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_BEFOREDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_NOTE": "{\n    \"val\": \"\"\n}\n"
+                },
+                "EP_INPUT": {
+                    "EP_NMSGBOX": "[\n    {\n        \"EPin_Par|1\": \"{\\n    \\\"val\\\": \\\"\\\"\\n}\\n\"\n    },\n    {\n        \"EPin_Par|2\": \"{\\n    \\\"val\\\": \\\"\\\"\\n}\\n\"\n    },\n    {\n        \"EPin_Par|3\": \"{\\n    \\\"val\\\": \\\"\\\"\\n}\\n\"\n    }\n]\n"
+                }
+            },
+            "NodePw": 164,
+            "NodePx": 401,
+            "NodePy": 209,
+            "NodeSubType": "EnumWidget_Win_MsgBox",
+            "NodeTag": "20230328143137658140",
+            "NodeTitle": "消息框"
+        }
+    ],
+    "SeqTag": "Main"
+}

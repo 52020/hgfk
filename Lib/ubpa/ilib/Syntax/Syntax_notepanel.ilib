@@ -1,0 +1,34 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Syntax_notepanel",
+		"Class":"EnumWidget_Syntax_notepanel"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Syntax_notepanel.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Syntax_notepanel.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_InterfaceAutomation",
+		"NodeIcon":"../../images/NodeWidget/N_Syntax_notepanel.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"",
+		"NodePinYin":"zhushi,zs,ZhuJie,ZJ,FenZu,FZ,ZuHe,ZH",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Syntax_notepanel.node_property.ItemTitle1",
+		"Items":
+		[
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll"
+	}
+}

@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2124-06-14",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "列表相关操作\n（SXCC_List_Related_Operations）\n1.初始化",
+        "ProName": "SXCC_List_Related_Operations",
+        "ProVer": "1.0.0.1",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "列表相关操作\n（SXCC_List_Related_Operations）\n1.初始化",
+        "ProEDType": "2",
+        "ProName": "SXCC_List_Related_Operations",
+        "ProVer": "1.0.0.1",
+        "RPath": "",
+        "UserID": ""
+    }
+}

@@ -1,0 +1,336 @@
+{
+"node_gen":
+    {
+    "Class": "EnumWidget_CSUIA_MouseClick_LocalCv",
+    "ID": "EnumWidget_CSUIA_MouseClick_LocalCv"
+    },
+"node_panel":
+    {
+    "IsPickup": "1",
+    "IsPreview": "1",
+    "NodeDesc": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_panel.NodeDesc",
+    "NodeIcon": "../../images/NodeWidget/N_Gen_MouseClick.png",
+    "NodeMenuGroup": "",
+    "NodeMenuPos": "1",
+    "NodePinYin": "shubiaodianji,sbdj",
+    "NodeTitle": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_panel.NodeTitle1",
+    "PinMSide": "LR",
+    "Pins":
+        [
+        ]
+    },
+"node_property":
+    {
+    "HasGenItem": "1",
+    "Items":
+        [
+            {
+            "Item_DataType": "int",
+            "Item_EnumID": "EP_Gen_WAITFOR",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "0",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name1",
+            "Item_NotPanel": "1",
+            "Item_ParName": "waitfor=|10",
+            "Item_Type": "EIT_Lineedit",
+            "Item_UnitIcon": "F_icon_(ms)_32px.png",
+            "Item_Value": "10000"
+            },
+            {
+            "Item_DataType": "",
+            "Item_EnumID": "EP_INPUT_MOUSE_CLICK",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "11",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name2",
+            "Item_NotPanel": "0",
+            "Item_ParName": "button=",
+            "Item_Type": "EIT_Combobox",
+            "Item_Value": "0",
+            "Items":
+                [
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name2.Items1",
+                    "Value": "'left'"
+                    },
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name2.Items2",
+                    "Value": "'right'"
+                    },
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name2.Items3",
+                    "Value": "'middle'"
+                    }
+                ]
+            },
+            {
+            "Item_DataType": "",
+            "Item_EnumID": "EP_INPUT_POSITION",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "11",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name3",
+            "Item_NotPanel": "1",
+            "Item_ParName": "curson=",
+            "Item_Type": "EIT_Combobox",
+            "Item_Value": "0",
+            "Items":
+                [
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name3.Items1",
+                    "Value": "'center'"
+                    },
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name3.Items2",
+                    "Value": "'lefttop'"
+                    },
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name3.Items3",
+                    "Value": "'rightbottom'"
+                    }
+                ]
+            },
+            {
+            "Item_DataType": "int",
+            "Item_EnumID": "EP_INPUT_X_OFFSET",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "11",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name4",
+            "Item_NotPanel": "0",
+            "Item_ParName": "offsetX=|0",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "region/left",
+            "Item_Value": ""
+            },
+            {
+            "Item_DataType": "int",
+            "Item_EnumID": "EP_INPUT_Y_OFFSET",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "11",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name5",
+            "Item_NotPanel": "0",
+            "Item_ParName": "offsetY=|0",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "region/top",
+            "Item_Value": ""
+            },
+            {
+            "Item_DataType": "int",
+            "Item_EnumID": "EP_INPUT_MOUSE_CLICK_TIMES",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "11",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name6",
+            "Item_NotPanel": "0",
+            "Item_ParName": "times=|1",
+            "Item_Type": "EIT_Lineedit",
+            "Item_Value": "1"
+            },
+            {
+            "Item_DataType": "",
+            "Item_EnumID": "EP_INPUT_COMBOX_CONTINUEONERROR",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "11",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name7",
+            "Item_NotPanel": "1",
+            "Item_ParName": "continue_on_error=r|'break'",
+            "Item_Type": "EIT_Combobox",
+            "Item_Value": "1",
+            "Items":
+                [
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name7.Items1",
+                    "Value": "'continue'"
+                    },
+                    {
+                    "Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name7.Items2",
+                    "Value": "'break'"
+                    }
+                ]
+            },
+            {
+            "Item_DataType": "string",
+            "Item_EnumID": "EP_WINDOW_TITLE",
+            "Item_ExtCheck": "1",
+            "Item_GroupID": "15",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name8",
+            "Item_NotPanel": "0",
+            "Item_ParName": "",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "window/window_title",
+            "Item_Value": ""
+            },
+            {
+            "Item_DataType": "string",
+            "Item_EnumID": "EP_WINDOW_CLASS",
+            "Item_ExtCheck": "1",
+            "Item_GroupID": "15",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name9",
+            "Item_NotPanel": "0",
+            "Item_ParName": "",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "window/window_class",
+            "Item_Value": ""
+            },
+            {
+            "Item_DataType": "",
+            "Item_EnumID": "EP_WINDOW_SUB_TYPE",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "15",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_Common.node_property.Item_Name1",
+            "Item_NotPanel": "0",
+            "Item_ParName": "",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "window/window_type",
+            "Item_Value": ""
+            },
+            {
+            "Item_DataType": "int",
+            "Item_EnumID": "EP_WINDOW_SEARCH_DEPTH",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "15",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name10",
+            "Item_NotPanel": "0",
+            "Item_ParName": "",
+            "Item_Type": "EIT_Lineedit",
+            "Item_Value": "2"
+            },
+            {
+            "Item_DataType": "string",
+            "Item_EnumID": "EP_CONTROL_NAME",
+            "Item_ExtCheck": "0",
+            "Item_GroupID": "12",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name11",
+            "Item_NotPanel": "0",
+            "Item_ParName": "",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "control/control_name",
+            "Item_Value": ""
+            },
+            {
+            "Item_EnumID": "EP_CONTROL_NUMBER",
+            "Item_ExtCheck": "0",
+            "Item_GroupID": "12",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name12",
+            "Item_NotPanel": "0",
+            "Item_ParName": "",
+            "Item_Type": "EIT_Lineedit",
+            "Item_Value": ""
+            },
+            {
+            "Item_DataType": "",
+            "Item_EnumID": "EP_CONTROL_PATH",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "12",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name13",
+            "Item_NotPanel": "0",
+            "Item_ParName": "",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "control/control_unique_identification",
+            "Item_Value": ""
+            },
+            {
+            "Item_DataType": "",
+            "Item_EnumID": "EP_CONTROL_SAP_CV_SELECTOR",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "12",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name14",
+            "Item_NotPanel": "0",
+            "Item_ParName": "cv_selector=|None",
+            "Item_RowNum": "4",
+            "Item_Type": "EIT_Lineedit",
+            "Item_uisubstance": "cv",
+            "Item_Value": ""
+            },
+            {
+            "Item_EnumID": "EP_CONTROL_SIMILARITY",
+            "Item_ExtCheck": "0",
+            "Item_GroupID": "12",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name15",
+            "Item_NotPanel": "0",
+            "Item_ParName": "similarity=|None",
+            "Item_Type": "EIT_Lineedit",
+            "Item_Value": "0.7"
+            },
+            {
+            "Item_EnumID": "EP_CONTROL_SEARCH_INDEX_RANGE",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "12",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.Item_Name16",
+            "Item_NotPanel": "0",
+            "Item_ParName": "search_index_range=|3",
+            "Item_Type": "EIT_Lineedit",
+            "Item_Value": "3"
+            },
+            {
+            "Item_EnumID": "EP_SNAP_SHOT_PREVIEW",
+            "Item_ExtCheck": "",
+            "Item_GroupID": "13",
+            "Item_IsNumber": "0",
+            "Item_Maxlen": "128",
+            "Item_Minlen": "1",
+            "Item_Name": "",
+            "Item_NotPanel": "1",
+            "Item_Type": "EIT_Preview",
+            "Item_uisubstance": "snapshot/snapshot_preview",
+            "Item_Value": ""
+            }
+        ],
+    "ItemTitle": "com.EnumWidget_CSUIA_MouseClick_LocalCv.node_property.ItemTitle1"
+    },
+"node_python":
+    {
+    "dl_funs": "RPANodes_PyCode",
+    "dl_path": "RPANodeCompileFun_x64_mt.dll",
+    "py_fun": "cv1.do_click(%s,project_dir=self.path)",
+    "py_import": "import ubpa.icv as icv"
+    }
+}

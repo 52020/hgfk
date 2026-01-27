@@ -1,0 +1,309 @@
+{
+	"node_gen": {
+		"ID": "Custom_Database05",
+		"Class": "Custom_Database05"
+	},
+	"node_panel": {
+		"NodeTitle": "com.Custom_Database01.node_panel.NodeTitle",
+		"NodeDesc": "com.Custom_Database01.node_panel.NodeDesc",
+		"NodeMenuGroup": "",
+		"NodeIcon": "../../../images/NodeWidget/N_icon_assembly_dbcon_16px.png",
+		"IsPickup": "0",
+		"IsPreview": "0",
+		"PinMSide": "LR",
+		"NodeMenuPos": "1",
+		"NodePinYin": "chuangjianshujukuduixiang,cjsjkdx",
+		"Pins":
+		[{
+				"Pin_Type": "EPin_Ret",
+				"Pin_EnumID": "EPin_Ret1",
+				"Pin_ItemName": "com.Custom_Database01.node_panel.Pin_ItemName",
+				"Pin_Side": "R",
+				"Pin_GroupID": "-1"
+			}
+		]
+	},
+	"node_property": {
+		"HasGenItem": "1",
+		"ItemTitle": "com.Custom_Database01.node_property.ItemTitle",
+		"Items":
+		[{
+				"Item_Type": "EIT_ComboboxItems",
+				"Item_ParName": "database_type=",
+				"Item_Name": "com.Custom_Database01.node_property.Item_Name",
+				"Item_Desc": "com.Custom_Database01.node_property.Item_Name",
+				"Item_EnumID": "EPC_DataBase",
+				"Item_Value": "0",
+				"Item_FileFilter": "*.*",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "0",
+				"Item_GroupID": "12",
+				"Item_DataType": "",
+				"Items":
+				[
+					{
+						"Name": "com.Custom_Database01.node_property.Item_Name.name1",
+						"Value": "mysql",
+						"SubItems":
+						[{
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "host=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name1",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc1",
+								"Item_EnumID": "EIT_Lineedit001",
+								"Item_Value": "''",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11|-1"
+							}, {
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "user=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name2",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc2",
+								"Item_EnumID": "EIT_Lineedit",
+								"Item_Value": "''",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11|-1"
+							}, {
+								"Item_Type": "EIT_Pswdedit",
+								"Item_ParName": "password=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name3",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc3",
+								"Item_EnumID": "EIT_Pswdedit",
+								"Item_Value": "",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11|-1"
+							}, {
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "database_name=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name4",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc4",
+								"Item_EnumID": "EIT_Lineedit01",
+								"Item_Value": "''",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11"
+							}, {
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "port=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name5",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc5",
+								"Item_EnumID": "EIT_Lineedit02",
+								"Item_Value": "3306",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11"
+							}, {
+								"Item_Type": "EIT_Combobox",
+								"Item_ParName": "charset=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name6",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Name6",
+								"Item_EnumID": "EIT_Combobox_Coding",
+								"Item_Value": "0",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11",
+								"Items": [{
+										"Name": "utf8mb4",
+										"Value": "'utf8mb4'"
+									}, {
+										"Name": "utf8",
+										"Value": "'utf8'"
+									}, {
+										"Name": "ascii",
+										"Value": "'ascii'"
+									}, {
+										"Name": "gbk",
+										"Value": "'gbk'"
+									}, {
+										"Name": "gb2312",
+										"Value": "'gb2312'"
+									}, {
+										"Name": "big5",
+										"Value": "'big5'"
+									}, {
+										"Name": "latin1",
+										"Value": "'latin1'"
+									}, {
+										"Name": "latin2",
+										"Value": "'latin2'"
+									}, {
+										"Name": "latin5",
+										"Value": "'latin5'"
+									}, {
+										"Name": "armscii8",
+										"Value": "'armscii8'"
+									}, {
+										"Name": "cp1250",
+										"Value": "'cp1250'"
+									}, {
+										"Name": "greek",
+										"Value": "'greek'"
+									}
+								]
+							}
+						]
+					}, {
+
+						"Name": "com.Custom_Database01.node_property.Item_Name7",
+						"Value": "1",
+						"SubItems":
+						[{
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "host=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name1",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc1",
+								"Item_EnumID": "EIT_Lineedit04",
+								"Item_Value": "''",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11|-1"
+							}, {
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "user=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name2",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc2",
+								"Item_EnumID": "EIT_Lineedit2",
+								"Item_Value": "''",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11|-1"
+							}, {
+								"Item_Type": "EIT_Pswdedit",
+								"Item_ParName": "password=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name3",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc3",
+								"Item_EnumID": "EIT_Pswdedit2",
+								"Item_Value": "",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11|-1"
+							}, {
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "sid=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name8",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Name8",
+								"Item_EnumID": "EIT_Lineedit05",
+								"Item_Value": "''",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11|-1"
+							}, {
+								"Item_Type": "EIT_Lineedit",
+								"Item_ParName": "port=",
+								"Item_Name": "com.Custom_Database01.node_property.Item_Name5",
+								"Item_Desc": "com.Custom_Database01.node_property.Item_Desc5",
+								"Item_EnumID": "EIT_Lineedit06",
+								"Item_Value": "1521",
+								"Item_DataType": "string",
+								"Item_FileFilter": "*.*",
+								"Item_ExtCheck": "",
+								"Item_Maxlen": "128",
+								"Item_Minlen": "1",
+								"Item_IsNumber": "0",
+								"Item_NotPanel": "0",
+								"Item_GroupID": "11"
+							}
+						]
+					}
+
+				]
+			},
+			{
+				"Item_Type": "EIT_Lineedit",
+				"Item_ParName": "user=",
+				"Item_Name": "com.Custom_Database01.node_property.Item_Name2",
+				"Item_Desc": "com.Custom_Database01.node_property.Item_Desc2",
+				"Item_EnumID": "EIT_Lineedit_g",
+				"Item_EnumIDMap": ["EIT_Lineedit", "EIT_Lineedit2"],
+				"Item_Value": "''",
+				"Item_DataType": "string",
+				"Item_FileFilter": "*.*",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "0",
+				"Item_GroupID": "-1|12"
+			},
+			{
+				"Item_Type": "EIT_Pswdedit",
+				"Item_ParName": "password=",
+				"Item_Name": "com.Custom_Database01.node_property.Item_Name3",
+				"Item_Desc": "com.Custom_Database01.node_property.Item_Desc3",
+				"Item_EnumID": "EIT_Pswdedit_g",
+				"Item_EnumIDMap": ["EIT_Pswdedit", "EIT_Pswdedit2"],
+				"Item_Value": "",
+				"Item_DataType": "string",
+				"Item_FileFilter": "*.*",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "0",
+				"Item_GroupID": "-1|12"
+			}
+		]
+	},
+	"node_python": {
+		"dl_funs": "RPANodes_GenPyCodes",
+		"dl_path": "RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.idatabase as idatabase",
+		"py_fun": "idatabase.connect_database(%s)"
+	}
+}

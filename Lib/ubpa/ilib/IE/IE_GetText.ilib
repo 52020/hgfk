@@ -1,0 +1,173 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_IE_GetText",
+		"Class":"EnumWidget_IE_GetText"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_IE_GetText.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_IE_GetText.node_panel.NodeDesc",
+		"NodeMenuGroup":"",
+		"NodeIcon":"../../images/NodeWidget/N_Gen_GetText.png",
+		"IsPickup":"1",
+		"IsPreview":"1",
+		"PinMSide":"LR",
+		"NodeMenuPos":"1",
+		"NodePinYin":"huoquwenben,hqwb",
+		"Pins":
+		[
+			{
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret1",
+				"Pin_ItemName":"com.EnumWidget_IE_GetText.node_panel.Pin_ItemName1",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_IE_GetText.node_property.ItemTitle1",
+		"Items":
+		[
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_IE_GetText.node_property.Item_Name1",
+				"Item_EnumID":"EP_Gen_WAITFOR",
+				"Item_ParName":"waitfor=|10",
+				"Item_DataType":"int",
+				"Item_Value":"10000",
+				"Item_UnitIcon":"F_icon_(ms)_32px.png",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"1",
+				"Item_GroupID":"0"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_IE_GetText.node_property.Item_Name2",
+				"Item_EnumID":"EP_CONTROL_WINDOW_TITLE",
+				"Item_ParName":"",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"1",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"control/toptitle",
+				"Item_GroupID":"12"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_IE_GetText.node_property.Item_Name3",
+				"Item_EnumID":"EP_CONTROL_TAG_NAME",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"control/tagname",
+				"Item_GroupID":"12"
+			},
+			{
+				"Item_Type":"EIT_ComboboxBtn",
+				"Item_Name":"com.EnumWidget_IE_GetText.node_property.Item_Name4",
+				"Item_EnumID":"EP_CONTROL_FIND_PATH",
+				"Item_ParName":"selector=r|''",
+				"Item_DataType":"",
+				"Item_Value":"0",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Items":
+				[
+				],
+				"Item_uisubstance":"control/target",
+				"Item_GroupID":"12"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_IE_GetText.node_property.Item_Name5",
+				"Item_EnumID":"EP_CONTROL_TITLE",
+				"Item_ParName":"title=r|''",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",				
+				"Item_uisubstance":"control/title",				
+				"Item_GroupID":"12"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_IE_GetText.node_property.Item_Name6",
+				"Item_EnumID":"EP_CONTROL_URL",
+				"Item_ParName":"url=r|''",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"control/url",
+				"Item_GroupID":"12"
+			},
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_Name": "com.EnumWidget_IE_GetText.node_property.Item_Name7",
+                "Item_EnumID": "EP_Mode",
+                "Item_ParName": "search_mode=",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_IE_GetText.node_property.Item_Name7.Items1",
+                        "Value": "0"
+                    },
+                    {
+                        "Name": "com.EnumWidget_IE_GetText.node_property.Item_Name7.Items2",
+                        "Value": "1"
+                    }
+                ]
+            },
+			{
+				"Item_Type":"EIT_Preview",
+				"Item_Name":"",
+				"Item_EnumID":"EP_SNAP_SHOT_PREVIEW",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"1",
+				"Item_uisubstance":"snapshot/snapshot_preview",
+				"Item_GroupID":"13"
+			}
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.iie as iie",
+		"py_fun": "iie.get_text(%s)"
+	}
+}

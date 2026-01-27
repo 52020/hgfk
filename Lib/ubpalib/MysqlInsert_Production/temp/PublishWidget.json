@@ -1,0 +1,20 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": false,
+            "Item_DispName": "MysqlInsert_Production-组件-v3.0：\n参数statusFlg  类型int（0：流程开始，1：流程结束）\n\n",
+            "Item_Type": "ExtRW"
+        },
+        "MysqlInsert_Production( )": {
+            "Item_Checked": true,
+            "Item_DispName": "MysqlInsert_Production",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "MysqlInsert_Production-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.0",
+    "VarDescAsName": true
+}

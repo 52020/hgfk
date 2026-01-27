@@ -1,0 +1,20 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": false,
+            "Item_DispName": "Main",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_File_Download( )": {
+            "Item_Checked": true,
+            "Item_DispName": "文件下载设置保存到指定绝对路径",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "文件下载设置保存到指定绝对路径-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.1",
+    "VarDescAsName": true
+}

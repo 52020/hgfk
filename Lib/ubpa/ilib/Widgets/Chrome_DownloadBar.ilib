@@ -1,0 +1,60 @@
+{
+    "node_gen": {
+        "ID": "EnumWidget_Chrome_DownloadBar",
+        "Class": "EnumWidget_Chrome_DownloadBar"
+    },
+    "node_panel": {
+        "NodeTitle": "com.EnumWidget_Chrome_DownloadBar.node_panel.NodeTitle",
+        "NodeDesc": "com.EnumWidget_Chrome_DownloadBar.node_panel.NodeDesc",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_InterfaceAutomation.NG_Control",
+        "NodeIcon": "../../images/NodeWidget/N_Web_SetLoad.png",
+        "PinMSide": "LR",
+        "NodeMenuPos": "1",
+        "NodePinYin": "chromexiazailanshezhi,xiazailanshezhi,xzlsz,chromexzlsz",
+        "Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.EnumWidget_Chrome_DownloadBar.node_panel.Pin_ItemName",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }]
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.EnumWidget_Chrome_DownloadBar.node_panel.NodeTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "status=|0",
+                "Item_Name": "com.EnumWidget_Chrome_DownloadBar.node_property.Item_Name",
+                "Item_Desc": "com.EnumWidget_Chrome_DownloadBar.node_property.Item_Desc",
+                "Item_EnumID": "EPC_status",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Chrome_DownloadBar.node_property.Item_Name.name1",
+                        "Value": "com.EnumWidget_Chrome_DownloadBar.node_property.Item_Name.value1"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Chrome_DownloadBar.node_property.Item_Name.name2",
+                        "Value": "com.EnumWidget_Chrome_DownloadBar.node_property.Item_Name.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_PyCode",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.ichrome_firefox as ichrome_firefox",
+        "py_fun": "ichrome_firefox.control_download_bar(%s)"
+    }
+}

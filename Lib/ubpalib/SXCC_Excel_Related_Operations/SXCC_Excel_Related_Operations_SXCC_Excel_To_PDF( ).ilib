@@ -1,0 +1,100 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_SXCC_Excel_Related_Operations_SXCC_Excel_To_PDF( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.0"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "Excel相关操作\n（SXCC_Excel_Related_Operations）\n1.初始化\r\nExcel导出为PDF\n（SXCC_Excel_To_PDF）\n1.初始化\r\nStr_Excel_Path:Excel表格绝对路径 默认值:\r\nStr_PDF_Path:PDF文件绝对路径 默认值:\r\nStr_Pop_Up_Prompt:是否需要弹窗提示 默认值:\"是\"\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/Excel相关操作-组件",
+        "NodeMenuPos": "5003",
+        "NodePinYin": "SXCC_Excel_To_PDF( ),Excel导出为PDF,Excel导出为PDF\n（SXCC_Excel_To_PDF）\n1.初始化",
+        "NodeTitle": "Excel导出为PDF",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "Excel导出为PDF",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "Excel表格绝对路径",
+                "Item_EnumID": "EPC_Str_Excel_Path",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Excel_To_PDF( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Excel_Path",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Excel_Path=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "PDF文件绝对路径",
+                "Item_EnumID": "EPC_Str_PDF_Path",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Excel_To_PDF( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_PDF_Path",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_PDF_Path=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "是否需要弹窗提示",
+                "Item_EnumID": "EPC_Str_Pop_Up_Prompt",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Excel_To_PDF( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Pop_Up_Prompt",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Pop_Up_Prompt=|\"是\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "Excel导出为PDF\n（SXCC_Excel_To_PDF）\n1.初始化",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-SXCC_Excel_Related_Operations",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.SXCC_Excel_To_PDF( %s)",
+        "py_import": "import ubpalib.SXCC_Excel_Related_Operations.codes.Main"
+    }
+}

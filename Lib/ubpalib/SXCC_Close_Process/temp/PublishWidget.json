@@ -1,0 +1,20 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": false,
+            "Item_DispName": "Main",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_Close_Process( )": {
+            "Item_Checked": true,
+            "Item_DispName": "关闭相关进程列表",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "SXCC_Close_Process-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.0",
+    "VarDescAsName": true
+}

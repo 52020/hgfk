@@ -1,0 +1,70 @@
+{
+    "NodeList": [
+        {
+            "NodePh": 52,
+            "NodePro": {
+                "EP_Gen": {
+                    "EP_Gen_AFTERDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_BEFOREDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_NOTE": "{\n    \"val\": \"\"\n}\n"
+                },
+                "EP_INPUT": {
+                    "EP_NOUTPUTINFO": "[\n    {\n        \"EPin_Par|1\": \"{\\n    \\\"val\\\": \\\"Ik1haW4gRW5kIg==\\\"\\n}\\n\"\n    }\n]\n"
+                }
+            },
+            "NodePw": 192,
+            "NodePx": 714,
+            "NodePy": 238,
+            "NodeSubType": "EnumWidget_Win_IPrint",
+            "NodeTag": "20240419100137129266",
+            "NodeTitle": "输出"
+        },
+        {
+            "NodePh": 52,
+            "NodePro": {
+                "EP_Gen": {
+                    "EP_Gen_AFTERDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_BEFOREDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_NOTE": "{\n    \"val\": \"\"\n}\n"
+                },
+                "EP_INPUT": {
+                    "EP_NOUTPUTINFO": "[\n    {\n        \"EPin_Par|1\": \"{\\n    \\\"val\\\": \\\"Ik1haW4gU3RhcnQi\\\"\\n}\\n\"\n    }\n]\n"
+                }
+            },
+            "NodePw": 192,
+            "NodePx": 714,
+            "NodePy": 142,
+            "NodeSubType": "EnumWidget_Win_IPrint",
+            "NodeTag": "20240419100137137353",
+            "NodeTitle": "输出"
+        },
+        {
+            "NodePh": 172,
+            "NodePro": {
+                "EP_Gen": {
+                    "EP_Gen_AFTERDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_BEFOREDELAY": "{\n    \"val\": \"MA==\"\n}\n",
+                    "EP_Gen_NOTE": "{\n    \"val\": \"\"\n}\n"
+                }
+            },
+            "NodePw": 192,
+            "NodePx": 407,
+            "NodePy": 142,
+            "NodeSubType": "EnumWidget_Program_Sequence",
+            "NodeTag": "20240419100137131282",
+            "NodeTitle": "序列"
+        },
+        {
+            "NodePh": 28,
+            "NodePro": {
+            },
+            "NodePw": 192,
+            "NodePx": 100,
+            "NodePy": 142,
+            "NodeSubType": "EnumWidget_Begin",
+            "NodeTag": "20240419095823339155",
+            "NodeTitle": "开始"
+        }
+    ],
+    "SeqTag": "Main"
+}

@@ -1,0 +1,25 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": false,
+            "Item_DispName": "Main",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_Number_To_Chine_Uppercase( )": {
+            "Item_Checked": true,
+            "Item_DispName": "把数字转换成中文大写\n（SXCC_Number_To_Chine_Uppercase）\n1.初始化",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_Number_To_Letter( )": {
+            "Item_Checked": true,
+            "Item_DispName": "把数字转换成对应的字母\n（SXCC_Number_To_Letter）\n1.初始化",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "数字-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.2",
+    "VarDescAsName": true
+}

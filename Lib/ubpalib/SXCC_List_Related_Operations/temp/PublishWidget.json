@@ -1,0 +1,25 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": false,
+            "Item_DispName": "Main",
+            "Item_Type": "ExtRW"
+        },
+        "One_List_Deduplication( )": {
+            "Item_Checked": true,
+            "Item_DispName": "一维列表去重",
+            "Item_Type": "ExtRW"
+        },
+        "Two_List_Deduplication( )": {
+            "Item_Checked": true,
+            "Item_DispName": "二维列表去重",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "列表相关操作-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.0",
+    "VarDescAsName": true
+}

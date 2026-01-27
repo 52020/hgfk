@@ -1,0 +1,70 @@
+{
+    "node_gen": {
+        "ID": "Custom_word23",
+        "Class": "Custom_word23"
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_word23.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_word23.node_panel.NodeDesc",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_Application.NG_Word",
+        "NodeIcon": "../../../images/NodeWidget/N_icon_assembly_word_16px.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide": "LR",
+        "NodeMenuPos": "281",
+        "NodePinYin": "tuichuword,tcword"
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_word23.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "word_obj=",
+                "Item_Name": "com.Custom_word23.node_property.Item_Name",
+                "Item_Desc": "com.Custom_word23.node_property.Item_Desc",
+                "Item_EnumID": "EIT_Document_object",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "is_shutdown_process=",
+                "Item_Name": "com.Custom_word23.node_property.Item_Name1",
+                "Item_Desc": "com.Custom_word23.node_property.Item_Desc1",
+                "Item_EnumID": "ELT_is_shutdown_process",
+                "Item_Value": "1",
+                "Item_DataType": "bool",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12",
+                "Items": [
+                    {
+                        "Name": "com.Custom_word23.node_property.Item_Name1.name2",
+                        "Value": "False"
+                    },
+                    {
+                        "Name": "com.Custom_word23.node_property.Item_Name1.name1",
+                        "Value": "True"
+                    }
+                ]
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.iword as iword",
+        "py_fun": "iword.close_word(%s)"
+    }
+}

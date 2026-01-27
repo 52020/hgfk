@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2124-04-24",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "关闭相关进程列表\n（SXCC_Close_Process）\n1.初始化",
+        "ProName": "SXCC_Close_Process",
+        "ProVer": "1.0.0.0",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "关闭相关进程列表\n（SXCC_Close_Process）\n1.初始化",
+        "ProEDType": "2",
+        "ProName": "SXCC_Close_Process",
+        "ProVer": "1.0.0.0",
+        "RPath": "",
+        "UserID": ""
+    }
+}

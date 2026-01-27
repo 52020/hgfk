@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2124-03-29",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "河南分公司日常追踪报表数据抽取至ABI数据表T_HN_REPORT_DAYA",
+        "ProName": "HN_Report_import_data",
+        "ProVer": "1.0.0.0",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "河南分公司日常追踪报表数据抽取至ABI数据表T_HN_REPORT_DAYA",
+        "ProEDType": "2",
+        "ProName": "HN_Report_import_data",
+        "ProVer": "1.0.0.0",
+        "RPath": "",
+        "UserID": ""
+    }
+}

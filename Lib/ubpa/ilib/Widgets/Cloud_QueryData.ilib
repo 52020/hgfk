@@ -1,0 +1,192 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Cloud_QueryData",
+		"Class":"EnumWidget_Cloud_QueryData"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Cloud_QueryData.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Cloud_QueryData.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_Server.NG_Cloud_Data",
+		"NodeIcon":"../../images/NodeWidget/N_Cloud_QueryData.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"11",
+		"NodePinYin":"chaxunshuju,cxsj",
+		"Pins":
+		[
+			{
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret1",
+				"Pin_ItemName":"com.EnumWidget_Cloud_QueryData.node_panel.Pin_ItemName1",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Cloud_QueryData.node_property.ItemTitle1",
+		"Items":
+		[
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name1",
+				"Item_EnumID":"EP_CONTROL_NAME",
+				"Item_ParName":"name=r|''",
+				"Item_DataType":"",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"12|-1"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name2",
+				"Item_EnumID":"EP_INPUT_EDIT_BEGINTIME",
+				"Item_ParName":"s_time=r|''",
+				"Item_DataType":"",
+				"Item_Value":"'yyyy-MM-dd hh:mm:ss'",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"11"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name3",
+				"Item_EnumID":"EP_INPUT_EDIT_ENDTIME",
+				"Item_ParName":"e_time=r|''",
+				"Item_DataType":"",
+				"Item_Value":"'yyyy-MM-dd hh:mm:ss'",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"11"
+			},
+			{
+				"Item_Type":"EIT_Combobox",
+				"Item_Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name4",
+				"Item_EnumID":"EP_INPUT_COMBOX_LEVEL",
+				"Item_ParName":"priority=r|''",
+				"Item_DataType":"",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Items":
+				[
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name4.Items1","Value":""},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name4.Items2","Value":"'normal'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name4.Items3","Value":"'high'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name4.Items4","Value":"'low'"}
+				],
+				"Item_GroupID":"11"
+			},
+			{
+				"Item_Type":"EIT_Combobox",
+				"Item_Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5",
+				"Item_EnumID":"EP_INPUT_COMBOX_STATUS",
+				"Item_ParName":"status=r|''",
+				"Item_DataType":"",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Items":
+				[
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name4.Items1","Value":""},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5.Items2","Value":"'pending'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5.Items3","Value":"'waittimeout'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5.Items4","Value":"'running'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5.Items5","Value":"'succ'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5.Items6","Value":"'failed'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5.Items7","Value":"'deleted'"},
+					{"Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name5.Items8","Value":"'retry'"}
+				],
+				"Item_GroupID":"11"
+			},
+			{
+				"Item_Type":"EIT_MLineedit",
+				"Item_Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name6",
+				"Item_EnumID":"EP_INPUT_EDIT_EXPRE",
+				"Item_ParName":"es_filter=r|''",
+				"Item_DataType":"",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"11"
+			},
+                        
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "page=",
+                "Item_Name": "com.EnumWidget_Cloud_QueryData.node_property.Item_Name8",
+                "Item_EnumID": "EPC_page",
+                "Item_Value": "None",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "11"
+            },
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "size=",
+                "Item_Name": "com.EnumWidget_Cloud_QueryData.node_property.Item_Name9",
+                "Item_EnumID": "EPC_size",
+                "Item_Value": "None",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "11"
+            },
+                        
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Cloud_QueryData.node_property.Item_Name7",
+				"Item_EnumID":"EP_INPUT_EDIT_TimeOut",
+				"Item_ParName":"timeout=|0",
+				"Item_DataType":"int",
+				"Item_Value":"0",
+				"Item_ExtCheck":"",
+				"Item_UnitIcon":"F_icon_(s)_32px.png",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"11"
+			}
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.iplatform as iplatform",
+		"py_fun": "iplatform.queryItems(%s)"
+	}
+}
+

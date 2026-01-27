@@ -1,0 +1,22 @@
+{
+    "Cus": {
+        "AppID": "",
+        "EndData": "2124-08-30",
+        "Price": "0.0",
+        "ProClass": "",
+        "ProDesc": "效率统计组件（生产环境）",
+        "ProName": "MysqlInsert_Production",
+        "ProVer": "1.0.0.0",
+        "UserID": ""
+    },
+    "Dev": {
+        "Developer": "",
+        "IDEVer": "2023.1.0",
+        "ProDesc": "效率统计组件（生产环境）",
+        "ProEDType": "2",
+        "ProName": "MysqlInsert_Production",
+        "ProVer": "1.0.0.0",
+        "RPath": "",
+        "UserID": ""
+    }
+}

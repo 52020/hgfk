@@ -1,0 +1,102 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_SFTP_Login",
+		"Class":"EnumWidget_SFTP_Login"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_SFTP_Login.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_SFTP_Login.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_Application.NG_SFtp",
+		"NodeIcon":"../../images/NodeWidget/N_Gen_Checkbox_Login.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"41",
+		"NodePinYin":"SFTPdenglu,SFTPdl",
+		"Pins":
+		[
+			{
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret1",
+				"Pin_ItemName":"com.EnumWidget_SFTP_Login.node_panel.Pin_ItemName1",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_SFTP_Login.node_property.ItemTitle1",
+		"Items":
+		[
+
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_SFTP_Login.node_property.Item_Name1",
+                "Item_EnumID": "EP_SFTP_HOST",
+                "Item_ParName": "host=|None",
+                "Item_DataType": "",
+                "Item_Value": "''",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_SFTP_Login.node_property.Item_Name2",
+				"Item_EnumID":"EP_SFTP_POST",
+				"Item_ParName":"port=|None",
+				"Item_DataType":"",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"12|-1"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_SFTP_Login.node_property.Item_Name3",
+				"Item_EnumID":"EP_SFTP_USER",
+				"Item_ParName":"user=|None",
+				"Item_DataType":"",
+				"Item_Value":"''",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"12|-1"
+			},
+			{
+				"Item_Type":"EIT_Pswdedit",
+				"Item_Name":"com.EnumWidget_SFTP_Login.node_property.Item_Name4",
+				"Item_EnumID":"EP_SFTP_PSW",
+				"Item_ParName":"psw=|None",
+				"Item_DataType":"",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"12|-1"
+			}
+			
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "from ubpa.itools import rpa_ftp",
+		"py_fun": "rpa_ftp.sftp_login(%s)"
+	}
+}

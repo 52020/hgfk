@@ -1,0 +1,30 @@
+{
+    "FlowDescAsName": true,
+    "Items": {
+        "Main( )": {
+            "Item_Checked": false,
+            "Item_DispName": "Main",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_ODS_Automatic_Login( )": {
+            "Item_Checked": true,
+            "Item_DispName": "ODS系统自动登录（谷歌浏览器）",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_ODS_File_Download( )": {
+            "Item_Checked": true,
+            "Item_DispName": "ODS系统文件下载设置保存到指定路径（谷歌浏览器，报表平台）",
+            "Item_Type": "ExtRW"
+        },
+        "SXCC_ODS_Report_Search( )": {
+            "Item_Checked": true,
+            "Item_DispName": "ODS系统报表搜索进入相关页面（谷歌浏览器，报表平台）\n（SXCC_ODS_Report_Search）\n1.修改查询后等待时间",
+            "Item_Type": "ExtRW"
+        }
+    },
+    "MenuFirst": "自定义组件",
+    "MenuSecond": "ODS系统相关操作（谷歌浏览器）-组件",
+    "PublishType": "Company",
+    "PublishVersion": "1.0.0.2",
+    "VarDescAsName": true
+}

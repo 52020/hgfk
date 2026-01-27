@@ -1,0 +1,55 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_HN_Report_import_data_Main( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.0"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "河南分公司日常追踪报表数据抽取至ABI数据表T_HN_REPORT_DAYA\r\n\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "数据库/ODS2ABI",
+        "NodeMenuPos": "5001",
+        "NodePinYin": "Main( ),Main,",
+        "NodeTitle": "Main",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "Main",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-HN_Report_import_data",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.Main( %s)",
+        "py_import": "import ubpalib.HN_Report_import_data.codes.Main"
+    }
+}

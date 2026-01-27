@@ -1,0 +1,115 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_SXCC_ODS_Related_Operations_SXCC_ODS_Automatic_Login( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.3"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "ODS系统相关操作（谷歌浏览器）\n（SXCC_ODS_Related_Operations）\n1.初始化\r\nODS系统自动登录（谷歌浏览器）\n（SXCC_ODS_Automatic_Login）\n1.修改ODS系统网址\n2.修改组件网址通配\r\nStr_ODS_Google_Chrome_Path:ODS系统专用谷歌浏览器绝对路径 默认值:r\"D:\\Chrome_86_odsportal\\GoogleChromePortable.exe\"\r\nStr_ODS_User:ODS系统账号 默认值:\"\"\r\nStr_ODS_Password:ODS系统密码 默认值:\"\"\r\nStr_Pop_Up_Prompt:是否需要弹窗提示 默认值:\"是\"\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/ODS系统相关操作（谷歌浏览器）-组件",
+        "NodeMenuPos": "5002",
+        "NodePinYin": "SXCC_ODS_Automatic_Login( ),ODS系统自动登录（谷歌浏览器）,ODS系统自动登录（谷歌浏览器）\n（SXCC_ODS_Automatic_Login）\n1.修改ODS系统网址\n2.修改组件网址通配",
+        "NodeTitle": "ODS系统自动登录（谷歌浏览器）",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "ODS系统自动登录（谷歌浏览器）",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "ODS系统专用谷歌浏览器绝对路径",
+                "Item_EnumID": "EPC_Str_ODS_Google_Chrome_Path",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_ODS_Automatic_Login( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_ODS_Google_Chrome_Path",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_ODS_Google_Chrome_Path=|r\"D:\\Chrome_86_odsportal\\GoogleChromePortable.exe\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "ODS系统账号",
+                "Item_EnumID": "EPC_Str_ODS_User",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_ODS_Automatic_Login( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_ODS_User",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_ODS_User=|\"\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "ODS系统密码",
+                "Item_EnumID": "EPC_Str_ODS_Password",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_ODS_Automatic_Login( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_ODS_Password",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_ODS_Password=|\"\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "是否需要弹窗提示",
+                "Item_EnumID": "EPC_Str_Pop_Up_Prompt",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_ODS_Automatic_Login( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Pop_Up_Prompt",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Pop_Up_Prompt=|\"是\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "ODS系统自动登录（谷歌浏览器）\n（SXCC_ODS_Automatic_Login）\n1.修改ODS系统网址\n2.修改组件网址通配",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-SXCC_ODS_Related_Operations",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.SXCC_ODS_Automatic_Login( %s)",
+        "py_import": "import ubpalib.SXCC_ODS_Related_Operations.codes.Main"
+    }
+}

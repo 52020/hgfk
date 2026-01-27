@@ -1,0 +1,38 @@
+{
+	"node_gen":
+	{
+		"ID":"Custom_lock1",
+		"CustomNo":"lock1",
+		"Class":""
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.Custom_lock1.node_panel.NodeTitle",
+		"NodeDesc":"com.Custom_lock1.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_Procedure.NG_Unlock_Screen",
+		"NodeIcon":"../../../images/NodeWidget/N_Program_ScreenUnLock.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"11",
+		"NodePinYin":"suoping,sp",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.Custom_lock1.node_property.ItemTitle",
+		"Items":
+		[
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_GenPyCodes",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.iwin as iwin",
+		"py_fun":"iwin.lock_screen(%s)"
+	}
+}

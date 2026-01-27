@@ -1,0 +1,160 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_SXCC_Pic_Related_Operations_SXCC_Cut_Pic( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.0"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "图片相关操作\n（SXCC_Pic_Related_Operations）\n1.初始化\r\n剪切图片\n（SXCC_Cut_Pic）\n1.初始化\r\nStr_Input_Pic_Path:输入图片（源图片）绝对路径 默认值:\r\nInt_Input_Left:输入左角坐标 默认值:0\r\nInt_Input_Upper:输入上角坐标 默认值:0\r\nInt_Input_Right:输入右角坐标 默认值:10\r\nInt_Input_Lower:输入下角坐标 默认值:10\r\nStr_Output_Pic_Path:输出图片（目标图片）绝对路径 默认值:\r\nStr_Pop_Up_Prompt:是否需要弹窗提示 默认值:\"是\"\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/图片相关操作-组件",
+        "NodeMenuPos": "5002",
+        "NodePinYin": "SXCC_Cut_Pic( ),剪切图片,剪切图片\n（SXCC_Cut_Pic）\n1.初始化",
+        "NodeTitle": "剪切图片",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "剪切图片",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "输入图片（源图片）绝对路径",
+                "Item_EnumID": "EPC_Str_Input_Pic_Path",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Cut_Pic( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Input_Pic_Path",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Input_Pic_Path=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "输入左角坐标",
+                "Item_EnumID": "EPC_Int_Input_Left",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Cut_Pic( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Int_Input_Left",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Int_Input_Left=|0",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "输入上角坐标",
+                "Item_EnumID": "EPC_Int_Input_Upper",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Cut_Pic( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Int_Input_Upper",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Int_Input_Upper=|0",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "输入右角坐标",
+                "Item_EnumID": "EPC_Int_Input_Right",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Cut_Pic( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Int_Input_Right",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Int_Input_Right=|10",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "输入下角坐标",
+                "Item_EnumID": "EPC_Int_Input_Lower",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Cut_Pic( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Int_Input_Lower",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Int_Input_Lower=|10",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "输出图片（目标图片）绝对路径",
+                "Item_EnumID": "EPC_Str_Output_Pic_Path",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Cut_Pic( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Output_Pic_Path",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Output_Pic_Path=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "是否需要弹窗提示",
+                "Item_EnumID": "EPC_Str_Pop_Up_Prompt",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_Cut_Pic( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Pop_Up_Prompt",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Pop_Up_Prompt=|\"是\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "剪切图片\n（SXCC_Cut_Pic）\n1.初始化",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-SXCC_Pic_Related_Operations",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.SXCC_Cut_Pic( %s)",
+        "py_import": "import ubpalib.SXCC_Pic_Related_Operations.codes.Main"
+    }
+}

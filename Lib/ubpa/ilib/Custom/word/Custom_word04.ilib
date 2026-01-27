@@ -1,0 +1,81 @@
+{
+	"node_gen":
+	{
+		"ID":"Custom_word04",
+		"Class":"Custom_word04"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.Custom_word04.node_panel.NodeTitle",
+		"NodeDesc":"com.Custom_word04.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_System.NG_Word",
+		"NodeIcon":"../../../images/NodeWidget/N_icon_assembly_getwordtable_16px.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"21",
+		"NodePinYin":"huoquwordbiaoge,hqwordbg",
+		"Pins":
+		[
+			{"Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.Custom_word04.node_panel.Pin_ItemName",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+			}
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.Custom_word04.node_property.ItemTitle",
+		"Items":
+		[
+		{
+                "Item_Type": "EIT_File",
+                "Item_ParName": "file_path=",
+                "Item_Name": "com.Custom_word04.node_property.Item_Name",
+                "Item_Desc": "com.Custom_word04.node_property.Item_Desc",
+                "Item_EnumID": "EIT_file_name",
+                "Item_Value": "",
+                "Item_DataType": "string",
+                "Item_FileFilter": "*.docx",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "mode=",
+                "Item_Name": "com.Custom_word04.node_property.Item_Name1",
+                "Item_Desc": "com.Custom_word04.node_property.Item_Desc1",
+                "Item_EnumID": "EIT_range",
+                "Item_Value": "0",
+                "Item_DataType": "int",
+                "Item_FileFilter": "*.*",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12",
+                "Items": [
+                    {
+                        "Name": "com.Custom_word04.node_property.Item_Name1.name1",
+                        "Value": "1"
+                    }
+				]
+            }
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_GenPyCodes",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.iword as iword",
+		"py_fun":"iword.extract_tables_from_word(%s)"
+	}
+}

@@ -1,0 +1,127 @@
+{
+	"node_gen":
+	{
+		"ID":"Custom_Mouse02",
+		"CustomNo":"Mouse02",
+		"Class":""
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.Custom_Mouse02.node_panel.NodeTitle",
+		"NodeDesc":"com.Custom_Mouse02.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_InterfaceAutomation.NG_Mouse",
+		"NodeIcon":"../../../images/NodeWidget/N_Gen_MouseMove_Scroll.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"61",
+		"NodePinYin":"shubiaogundong,sbgd",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.Custom_psutil001.node_property.ItemTitle",
+		"Items":
+		[
+            {
+                    "Item_Type":"EIT_Combobox",
+                    "Item_ParName":"direction=",
+                    "Item_Name":"com.Custom_Mouse02.node_property.Item_Name1",
+                    "Item_Desc":"com.Custom_Mouse02.node_property.Item_Desc1",
+                    "Item_EnumID":"EPC_direction",
+                    "Item_Value":"1",
+                    "Item_DataType":"string",
+                    "Item_ExtCheck":"",
+                    "Item_Maxlen":"128",
+                    "Item_Minlen":"1",
+                    "Item_IsNumber":"0",
+                    "Item_NotPanel":"0",
+                    "Items": [
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name1.name1",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name1.value1"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name1.name2",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name1.value2"
+                        }
+                    ],
+                    "Item_GroupID":"12|-1"
+                },
+                {
+                    "Item_Type":"EIT_Lineedit",
+                    "Item_ParName":"times=",
+                    "Item_Name":"com.Custom_Mouse02.node_property.Item_Name2",
+                    "Item_Desc":"com.Custom_Mouse02.node_property.Item_Desc2",
+                    "Item_EnumID":"EPC_disk_name",
+                    "Item_Value":"",
+                    "Item_DataType":"int",
+                    "Item_ExtCheck":"",
+                    "Item_Maxlen":"128",
+                    "Item_Minlen":"1",
+                    "Item_IsNumber":"0",
+                    "Item_NotPanel":"0",
+                    "Item_GroupID":"12|-1"
+                },
+                {
+                    "Item_Type":"EIT_Combobox",
+                    "Item_ParName":"text=",
+                    "Item_Name":"com.Custom_Mouse02.node_property.Item_Name3",
+                    "Item_Desc":"com.Custom_Mouse02.node_property.Item_Desc3",
+                    "Item_EnumID":"EPC_text",
+                    "Item_Value":"0",
+                    "Item_DataType":"string",
+                    "Item_ExtCheck":"",
+                    "Item_Maxlen":"128",
+                    "Item_Minlen":"1",
+                    "Item_IsNumber":"0",
+                    "Item_NotPanel":"0",
+                    "Items": [
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name1",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value1"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name2",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value2"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name3",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value3"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name4",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value4"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name5",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value5"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name6",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value6"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name7",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value7"
+                        },
+                        {
+                            "Name": "com.Custom_Mouse02.node_property.Item_Name3.name8",
+                            "Value": "com.Custom_Mouse02.node_property.Item_Name3.value8"
+                        }
+                    ],
+                    "Item_GroupID":"12|-1"
+                }
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_GenPyCodes",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.ics as ics",
+		"py_fun":"ics.do_mouse_wheel(%s)"
+	}
+}

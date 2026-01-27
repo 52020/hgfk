@@ -1,0 +1,95 @@
+{
+	"node_gen":
+	{
+		"ID":"Custom_inform_play_audio001",  
+		"Class":"Custom_inform_play_audio001"  
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.play_audio001.node_panel.NodeTitle",  
+		"NodeDesc":"com.play_audio001.node_panel.NodeDesc",  
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_System.NG_SysPrompt",
+		"NodeIcon":"../../../images/NodeWidget/N_Cloud_SetVar_Audio.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"11",
+		"NodePinYin": "xitongtishiyin,xttsy",
+		"Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.play_audio001.node_panel.Pin_ItemName",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }
+        ]
+	},
+	"node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.play_audio001.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "audio_path=",
+                "Item_Name": "com.play_audio001.node_property.Item_Name1", 
+                "Item_Desc": "com.play_audio001.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_file_type",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name1",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value1"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name2",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value2"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name3",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value3"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name4",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value4"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name5",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value5"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name6",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value6"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name7",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value7"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name8",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value8"
+                    },
+                    {
+                        "Name": "com.play_audio001.node_property.Item_Name1.name9",
+                        "Value": "com.play_audio001.node_property.Item_Name1.value9"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            }
+        ]
+    },
+	"node_python":
+	{
+		"dl_funs":"RPANodes_GenPyCodes",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.play_audio as play_audio",
+		"py_fun": "play_audio.play_audio(%s)"
+	}
+}
+

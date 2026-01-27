@@ -1,0 +1,130 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_quyuxieruexcel_Main( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.0"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "\r\n\r\ndata:区域内容 默认值:\r\nfile:文件路径 默认值:\r\ndanyuange: 默认值:\"A1\"\r\ngongzuobiao: 默认值:\"Sheet1\"\r\ndakaifangshi:打开方式(0为) 默认值:0\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "应用/Excel",
+        "NodeMenuPos": "5001",
+        "NodePinYin": "Main( ),区域写入excel,",
+        "NodeTitle": "区域写入excel",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "区域写入excel",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "区域内容",
+                "Item_EnumID": "EPC_data",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|Main( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "data",
+                "Item_NotPanel": "0",
+                "Item_ParName": "data=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "文件路径",
+                "Item_EnumID": "EPC_file",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|Main( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "file",
+                "Item_NotPanel": "0",
+                "Item_ParName": "file=|",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "",
+                "Item_EnumID": "EPC_danyuange",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|Main( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "danyuange",
+                "Item_NotPanel": "0",
+                "Item_ParName": "danyuange=|\"A1\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "",
+                "Item_EnumID": "EPC_gongzuobiao",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|Main( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "gongzuobiao",
+                "Item_NotPanel": "0",
+                "Item_ParName": "gongzuobiao=|\"Sheet1\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "打开方式(0为)",
+                "Item_EnumID": "EPC_dakaifangshi",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|Main( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "dakaifangshi",
+                "Item_NotPanel": "0",
+                "Item_ParName": "dakaifangshi=|0",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-quyuxieruexcel",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.Main( %s)",
+        "py_import": "import ubpalib.quyuxieruexcel.codes.Main"
+    }
+}

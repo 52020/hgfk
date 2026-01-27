@@ -1,0 +1,103 @@
+{
+    "node_gen": {
+        "ID": "Custom_open01",
+        "CustomNo": "open01",
+        "Class": ""
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_open01.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_open01.node_panel.NodeDesc",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_System.NG_Open",
+        "NodeIcon": "../../../images/NodeWidget/N_Open_APP.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide": "LR",
+        "NodeMenuPos": "1",
+        "NodePinYin": "yingyong,yy",
+        "Pins": []
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_open01.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_File",
+                "Item_ParName": "path=",
+                "Item_Name": "com.Custom_open01.node_property.Item_Name1",
+                "Item_Desc": "com.Custom_open01.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_path",
+                "Item_Value": "",
+                "Item_DataType": "string",
+                "Item_FileFilter": "*.exe",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1",
+                "Item_uisubstance": "extradata/app_pathparam"
+            },
+            {
+                "Item_Type": "EIT_Path",
+                "Item_ParName": "work_path=",
+                "Item_Name": "com.Custom_open01.node_property.Item_Name2",
+                "Item_Desc": "com.Custom_open01.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_work_path",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_ComboboxItems",
+                "Item_ParName": "maximum=",
+                "Item_Name": "com.Custom_open01.node_property.Item_Name3",
+                "Item_Desc": "com.Custom_open01.node_property.Item_Desc3",
+                "Item_EnumID": "EIT_maximum",
+                "Item_Value": "0",
+                "Item_DataType": "int",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "0",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1",
+                "Items": [
+                    {
+                        "Name": "com.Custom_open01.node_property.Item_Name3.Name2",
+                        "Value": 0
+                    },
+                    {
+                        "Name": "com.Custom_open01.node_property.Item_Name3.Name1",
+                        "Value": 1,
+                        "SubItems": [
+                            {
+                                "Item_Type": "EIT_Lineedit",
+                                "Item_Name": "com.Custom_open01.node_property.Item_Name3.Name1.Name1",
+                                "Item_EnumID": "EPC_max_sleep",
+                                "Item_ParName": "max_sleep=",
+                                "Item_Value": "3",
+                                "Item_DataType": "int",
+                                "Item_Maxlen": "128",
+                                "Item_Minlen": "1",
+                                "Item_IsNumber": "0",
+                                "Item_NotPanel": "1",
+                                "Item_GroupID": "12"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.ics as ics",
+        "py_fun": "ics.run_app(%s)"
+    }
+}

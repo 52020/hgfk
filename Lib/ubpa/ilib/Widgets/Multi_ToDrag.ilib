@@ -1,0 +1,102 @@
+{
+    "node_gen": {
+        "ID": "EnumWidget_Multi_ToDrag",
+        "Class": "EnumWidget_Multi_ToDrag"
+    },
+    "node_panel": {
+        "NodeTitle": "com.EnumWidget_Multi_ToDrag.node_panel.NodeTitle1",
+        "NodeDesc": "com.EnumWidget_Multi_ToDrag.node_panel.NodeDesc1",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_InterfaceAutomation.NG_Mouse",
+        "NodeIcon": "../../images/NodeWidget/N_Region_ToDrag.png",
+        "IsPickup": "1",
+        "NodePickupType": "cs",
+        "IsPreview": "1",
+        "PinMSide": "LR",
+        "NodeMenuPos": "21",
+        "NodePinYin": "guijituodong,gjtd",
+        "Pins": []
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.EnumWidget_Multi_ToDrag.node_property.ItemTitle1",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Multi_ToDrag.node_property.Item_Name1",
+                "Item_EnumID": "EP_CONTROL_pos_list",
+                "Item_ParName": "pos_list=|None",
+                "Item_DataType": "",
+                "Item_Value": "[(0,0), (100,100)]",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Multi_ToDrag.node_property.Item_Name2",
+                "Item_EnumID": "EP_WINDOW_TITLE",
+                "Item_ParName": "win_title=r|None",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "1",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "window/window_title",
+                "Item_GroupID": "15"
+            },
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Multi_ToDrag.node_property.Item_Name5",
+                "Item_EnumID": "EP_WINDOW_CLASS",
+                "Item_ParName": "win_class=r|None",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "1",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "window/window_class",
+                "Item_GroupID": "15"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Multi_ToDrag.node_property.Item_Name3",
+                "Item_EnumID": "EP_INPUT_EDIT_PAUSECOUNT",
+                "Item_ParName": "point=|0",
+                "Item_DataType": "int",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "11"
+            },
+            {
+                "Item_Type": "EIT_Preview",
+                "Item_Name": "",
+                "Item_EnumID": "EP_SNAP_SHOT_PREVIEW",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Item_uisubstance": "snapshot/snapshot_preview",
+                "Item_GroupID": "13"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_PyCode",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.ics as ics\r\nimport pyautogui",
+        "py_fun": "ics.do_multi_drag_to_safe(%s)"
+    }
+}

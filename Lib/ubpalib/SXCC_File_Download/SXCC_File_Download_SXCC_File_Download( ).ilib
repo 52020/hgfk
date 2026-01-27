@@ -1,0 +1,85 @@
+{
+    "node_gen": {
+        "Class": "",
+        "ID": "ExtRW_SXCC_File_Download_SXCC_File_Download( )",
+        "ToPath": "Server",
+        "Version": "1.0.0.2"
+    },
+    "node_panel": {
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "NodeDesc": "文件下载设置保存到指定绝对路径\n（SXCC_File_Download）\n1.添加动态加载另存为窗口功能\r\n文件下载设置保存到指定绝对路径\n（SXCC_File_Download）\n1.添加动态加载另存为窗口功能\r\nStr_File_Path:文件绝对路径 默认值:r\"C:\\Users\\Administrator\\新建文件夹\\文件下载测试.xlsx\"\r\nStr_Pop_Up_Prompt:是否需要弹窗提示 默认值:\"是\"\r\n",
+        "NodeIcon": "../../ubpa/images/Gen/N_Gen_widget.png",
+        "NodeMenuGroup": "自定义组件/文件下载设置保存到指定绝对路径-组件",
+        "NodeMenuPos": "5002",
+        "NodePinYin": "SXCC_File_Download( ),文件下载设置保存到指定绝对路径,文件下载设置保存到指定绝对路径\n（SXCC_File_Download）\n1.添加动态加载另存为窗口功能",
+        "NodeTitle": "文件下载设置保存到指定绝对路径",
+        "PinMSide": "LR",
+        "Pins": [
+            {
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_GroupID": "-1",
+                "Pin_ItemName": "返回值",
+                "Pin_Side": "R",
+                "Pin_Type": "EPin_Ret"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "0",
+        "ItemTitle": "文件下载设置保存到指定绝对路径",
+        "Items": [
+            {
+                "Item_DataType": "",
+                "Item_Desc": "文件绝对路径",
+                "Item_EnumID": "EPC_Str_File_Path",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_File_Download( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_File_Path",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_File_Path=|r\"C:\\Users\\Administrator\\新建文件夹\\文件下载测试.xlsx\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "是否需要弹窗提示",
+                "Item_EnumID": "EPC_Str_Pop_Up_Prompt",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|SXCC_File_Download( )",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "Str_Pop_Up_Prompt",
+                "Item_NotPanel": "0",
+                "Item_ParName": "Str_Pop_Up_Prompt=|\"是\"",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            },
+            {
+                "Item_DataType": "",
+                "Item_Desc": "文件下载设置保存到指定绝对路径\n（SXCC_File_Download）\n1.添加动态加载另存为窗口功能",
+                "Item_EnumID": "EIT_Instance",
+                "Item_ExtCheck": "",
+                "Item_GroupID": "51|-1",
+                "Item_IsNumber": "0",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_Name": "实例-SXCC_File_Download",
+                "Item_NotPanel": "0",
+                "Item_ParName": "",
+                "Item_Type": "EIT_Lineedit",
+                "Item_Value": ""
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_RWidgetFunCode",
+        "dl_path": "RPANodeCompileFund_x64_mt.dll",
+        "py_fun": "%s.SXCC_File_Download( %s)",
+        "py_import": "import ubpalib.SXCC_File_Download.codes.Main"
+    }
+}
