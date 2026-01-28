@@ -26,4 +26,4 @@ jobs:
       - name: 执行hgfk.py
         run: |
           # 直接在运行时指定Lib路径，不用改脚本
-          PYTHONPATH=$(pwd)/Lib python hgfk.py
+          PYTHONPATH=$(pwd)/Lib/ubpa python hgfk.py
