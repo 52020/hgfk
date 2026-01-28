@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-script:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
@@ -23,5 +23,4 @@ jobs:
 
       - name: 执行脚本（精准路径，无任何冲突）
         run: |
-           cd Lib
-          PYTHONPATH=$(pwd):$PYTHONPATH python -c "import sys; sys.path.insert(0, '..'); exec(open('../hgfk.py').read())"
+           PYTHONPATH=$(pwd)/Lib python hgfk.py
