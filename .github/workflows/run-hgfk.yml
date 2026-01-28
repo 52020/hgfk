@@ -23,5 +23,5 @@ jobs:
 
       - name: 执行脚本（精准路径，无任何冲突）
         run: |
-          # 仅指向ubpa文件夹，彻底避开标准库冲突
-          PYTHONPATH=$(pwd)/Lib/ubpa python hgfk.py
+           cd Lib
+          PYTHONPATH=$(pwd):$PYTHONPATH python -c "import sys; sys.path.insert(0, '..'); exec(open('../hgfk.py').read())"
