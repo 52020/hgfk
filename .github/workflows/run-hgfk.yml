@@ -6,12 +6,12 @@ on:
 
 jobs:
   run-script:
-    runs-on: windows-latest
+    runs-on: windows-latest  # ✅ Windows 环境
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置 Python 3.13 环境
+      - name: 配置 Python 3.13 环境  # ✅ Python 3.13
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
@@ -21,6 +21,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pillow numpy opencv-python
 
-      - name: 执行脚本（精准路径，无任何冲突）
+      - name: 执行脚本（Windows环境）
         run: |
-           PYTHONPATH=$(pwd)/Lib python hgfk.py
+          # Windows PowerShell语法
+          # 设置PYTHONPATH为当前目录，这样from ubpa.encrypt会正确解析
+          $env:PYTHONPATH = "$pwd"
+          python hgfk.py
