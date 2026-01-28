@@ -21,12 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pillow numpy opencv-python
 
-      - name: 执行脚本（终极绕过所有导入问题）
+      - name: 执行脚本（精准路径，无任何冲突）
         run: |
-          # 1. 把encrypt.py的内容复制到临时目录
-          mkdir -p /tmp/ubpa
-          cp $(pwd)/Lib/ubpa/encrypt.py /tmp/ubpa/
-          touch /tmp/ubpa/__init__.py
-          
-          # 2. 运行脚本，优先加载临时目录的ubpa包
-          PYTHONPATH=/tmp:$PYTHONPATH python hgfk.py
+          # 仅指向ubpa文件夹，彻底避开标准库冲突
+          PYTHONPATH=$(pwd)/Lib/ubpa python hgfk.py
