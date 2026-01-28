@@ -1,32 +1,29 @@
 name: 每月28号14点运行 hgfk.py
 
-# 触发规则：每月28号14点（北京时间）运行 + 手动触发
 on:
   schedule:
     - cron: '0 6 28 * *'  # UTC 6点 = 北京时间14点，每月28号执行
-  workflow_dispatch:      # 保留手动触发功能
+  workflow_dispatch:
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
-      # 1. 拉取仓库所有代码（包括依赖文件夹）
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      # 2. 设置 Python 环境
       - name: 配置 Python 环境
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'  # 请根据你的hgfk.py实际版本调整
+          python-version: '3.9'
 
-      # 3. 配置Python路径，加载本地文件夹依赖（核心）
-      - name: 加载本地文件夹依赖
+      - name: 加载本地文件夹依赖并安装第三方库
         run: |
           python -m pip install --upgrade pip
-          # 将仓库根目录添加到Python搜索路径（关键）
+          # 安装 requests 库
+          pip install requests
+          # 将仓库根目录添加到Python搜索路径
           echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
 
-      # 4. 运行hgfk.py脚本
       - name: 执行hgfk.py
         run: python hgfk.py
