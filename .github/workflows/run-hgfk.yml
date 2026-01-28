@@ -12,17 +12,17 @@ jobs:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置 Python 环境
+      - name: 配置 Python 3.13 环境
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
 
-      - name: 安装所有依赖 + 精准配置路径
+      - name: 安装所有依赖 + 安全配置路径
         run: |
           python -m pip install --upgrade pip
           pip install requests pillow numpy opencv-python
-          # 将Lib目录加入Python搜索路径
-          echo "PYTHONPATH=$(pwd)/Lib/ubpa" >> $GITHUB_ENV
+          # 安全追加路径：把Lib加到PYTHONPATH末尾，优先用系统标准库
+          echo "PYTHONPATH=$PYTHONPATH:$(pwd)/Lib" >> $GITHUB_ENV
 
       - name: 执行hgfk.py
         run: python hgfk.py
