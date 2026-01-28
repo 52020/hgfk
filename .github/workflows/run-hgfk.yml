@@ -15,7 +15,7 @@ jobs:
       - name: 配置 Python 环境
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.13'
 
       - name: 安装所有依赖 + 精准配置路径
         run: |
