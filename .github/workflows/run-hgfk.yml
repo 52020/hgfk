@@ -2,8 +2,8 @@ name: 每月28号14点运行 hgfk.py
 
 on:
   schedule:
-    - cron: '0 6 28 * *'  # UTC 6点 = 北京时间14点，每月28号执行
-  workflow_dispatch:
+    - cron: '0 6 28 * *'  # 北京时间14点，每月28号执行
+  workflow_dispatch:      # 手动触发
 
 jobs:
   run-script:
@@ -15,15 +15,18 @@ jobs:
       - name: 配置 Python 环境
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.9'  # 可根据实际版本调整
 
-      - name: 安装所有依赖
+      - name: 安装所有依赖 + 修复路径
         run: |
           python -m pip install --upgrade pip
-          # 安装脚本需要的所有第三方库
+          # 安装所有第三方依赖
           pip install requests pillow numpy opencv-python
-          # 将仓库根目录添加到Python搜索路径
-          echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
+          # 修复ubpa路径：指向仓库根目录
+          echo "PYTHONPATH=$(pwd)/.." >> $GITHUB_ENV
+          # 调试：打印路径（可选，方便排查）
+          echo "当前工作目录：$(pwd)"
+          echo "Python路径：$PYTHONPATH"
 
       - name: 执行hgfk.py
         run: python hgfk.py
