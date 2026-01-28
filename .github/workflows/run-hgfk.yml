@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pillow numpy opencv-python
           # 将Lib目录加入Python搜索路径
-          echo "PYTHONPATH=$(pwd)/Lib" >> $GITHUB_ENV
+          echo "PYTHONPATH=$(pwd)/Lib/ubpa" >> $GITHUB_ENV
 
       - name: 执行hgfk.py
         run: python hgfk.py
