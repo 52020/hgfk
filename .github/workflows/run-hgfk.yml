@@ -6,24 +6,104 @@ on:
 
 jobs:
   run-script:
-    runs-on: windows-latest  # ✅ Windows 环境
+    runs-on: windows-latest
+    
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置 Python 3.13 环境  # ✅ Python 3.13
+      - name: 配置 Python 3.13 环境 (32位)
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-
+          architecture: 'x86'  # 32位版本！！！
+      
       - name: 安装所有依赖
         run: |
           python -m pip install --upgrade pip
-          pip install requests pillow numpy opencv-python
-
-      - name: 执行脚本（Windows环境）
+          pip install requests pillow numpy
+          # opencv-python可能有32位版本问题，使用headless版本
+          pip install opencv-python-headless
+      
+      - name: 检查Python架构
         run: |
-          # Windows PowerShell语法
-          # 设置PYTHONPATH为当前目录，这样from ubpa.encrypt会正确解析
-          $env:PYTHONPATH = "$pwd\Lib"
-          python hgfk.py
+          python -c "import struct; print('Python架构:', '32位' if struct.calcsize('P') == 4 else '64位')"
+          python -c "import sys; print('Python版本:', sys.version)"
+      
+      - name: 执行脚本（避免标准库冲突）
+        run: |
+          echo "=== 执行脚本 ==="
+          
+          # 方法1: 使用动态导入避免路径问题
+          python -c "
+import sys
+import os
+import importlib.util
+
+print('工作目录:', os.getcwd())
+print('Python架构:', '32位' if sys.maxsize <= 2**32 else '64位')
+
+# 1. 找到encrypt.pyd (确保是32位的)
+pyd_path = os.path.join(os.getcwd(), 'Lib', 'ubpa', 'encrypt.pyd')
+print('encrypt.pyd路径:', pyd_path)
+print('文件存在:', os.path.exists(pyd_path))
+
+# 2. 动态加载.pyd文件
+spec = importlib.util.spec_from_file_location('ubpa.encrypt', pyd_path)
+encrypt_module = importlib.util.module_from_spec(spec)
+sys.modules['ubpa.encrypt'] = encrypt_module
+spec.loader.exec_module(encrypt_module)
+
+# 3. 获取decrypt函数
+if hasattr(encrypt_module, 'decrypt'):
+    decrypt_func = encrypt_module.decrypt
+    print('✅ 成功加载decrypt函数')
+else:
+    print('❌ 找不到decrypt函数')
+    sys.exit(1)
+
+# 4. 创建假的ubpa模块（如果需要）
+class FakeUbpa:
+    encrypt = encrypt_module
+
+sys.modules['ubpa'] = FakeUbpa()
+
+# 5. 运行hgfk.py
+print('开始运行hgfk.py...')
+with open('hgfk.py', 'r', encoding='utf-8') as f:
+    code = f.read()
+
+# 创建一个包含所有必要导入的命名空间
+namespace = {
+    'decrypt': decrypt_func,
+    '__name__': '__main__',
+    '__file__': 'hgfk.py'
+}
+
+# 导入hgfk.py需要的其他模块
+imports = [
+    'hashlib', 'base64', 'hmac', 'time', 'requests', 'json',
+    'numpy as np', 'cv2'
+]
+
+for imp in imports:
+    try:
+        if ' as ' in imp:
+            module_name, alias = imp.split(' as ')
+            exec(f'import {module_name.strip()} as {alias.strip()}', namespace)
+        else:
+            exec(f'import {imp.strip()}', namespace)
+    except Exception as e:
+        print(f'警告: 导入 {imp} 失败: {e}')
+
+# 特殊处理PIL
+try:
+    from PIL import Image
+    namespace['Image'] = Image
+except Exception as e:
+    print(f'警告: 导入PIL.Image失败: {e}')
+
+# 执行代码
+exec(code, namespace)
+print('✅ 脚本执行完成！')
+          "
