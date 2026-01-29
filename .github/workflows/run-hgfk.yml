@@ -6,12 +6,12 @@ on:
 
 jobs:
   run-script:
-    runs-on: windows-latest
+    runs-on: windows-2019  # 用和你本地更接近的Windows 2019环境
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置32位Python 3.10环境
+      - name: 配置32位Python 3.8环境
         uses: actions/setup-python@v5
         with:
           python-version: '3.8'
@@ -21,11 +21,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests pillow numpy opencv-python
+          # 安装VC++运行时库，解决底层依赖问题
+          choco install vcredist2019 -y
 
-      - name: 执行脚本（隔离旧Lib，仅用上传的ubpa）
+      - name: 执行脚本（完整依赖加载）
         run: |
-          # 仅指向你上传的ubpa模块路径，不碰旧Lib
+          # 指向上传的ubpa
           $env:PYTHONPATH = "$env:PYTHONPATH;$pwd\hgfk\new_ubpa"
-          # 把DLL目录加入系统PATH
-          $env:PATH = "$env:PATH;$pwd\hgfk\new_ubpa\DLLs"
+          # 加入DLL路径
+          $env:PATH = "$env:PATH;$pwd\hgfk\new_ubpa\DLLs;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Redist\MSVC\14.29.30133\x86"
           python hgfk.py
