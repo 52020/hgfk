@@ -1,32 +1,29 @@
 name: 每月28号14点运行 hgfk.py
 on:
   schedule:
-    - cron: '0 6 28 * *'  # UTC时间6点 = 北京时间14点
-  workflow_dispatch:       # 保留手动触发功能
+    - cron: '0 6 28 * *'
+  workflow_dispatch:
 
 jobs:
   run-script:
-    runs-on: windows-latest  # Windows 最新环境
+    runs-on: windows-latest  # ✅ Windows 环境
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置 32位 Python 3.13 环境
+      - name: 配置 Python 3.13 环境  # ✅ Python 3.13
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
-          architecture: 'x86'  # 关键：指定32位Python
+          python-version: '3.8'
 
       - name: 安装所有依赖
         run: |
           python -m pip install --upgrade pip
           pip install requests pillow numpy opencv-python
-          # 可选：安装32位VC运行时（解决32位依赖问题）
-          choco install vcredist2022 -y --forcex86
 
-      - name: 执行脚本（Windows 32位环境）
+      - name: 执行脚本（Windows环境）
         run: |
-          # 关键：PYTHONPATH 包含仓库根目录 + Lib子目录
+          # Windows PowerShell语法
+          # 设置PYTHONPATH为当前目录，这样from ubpa.encrypt会正确解析
           $env:PYTHONPATH = "$pwd\Lib"
-          # 执行目标脚本
           python hgfk.py
