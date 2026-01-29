@@ -25,5 +25,5 @@ jobs:
         run: |
           # Windows PowerShell语法
           # 设置PYTHONPATH为当前目录，这样from ubpa.encrypt会正确解析
-          $env:PYTHONPATH = "$pwd"
+          $env:PYTHONPATH = "$pwd\Lib"
           python hgfk.py
