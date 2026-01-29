@@ -27,6 +27,6 @@ jobs:
       - name: 执行脚本（Windows 32位环境）
         run: |
           # 关键：PYTHONPATH 包含仓库根目录 + Lib子目录
-          $env:PYTHONPATH = "$pwd;$pwd\Lib"
+          $env:PYTHONPATH = "$pwd\Lib"
           # 执行目标脚本
           python hgfk.py
