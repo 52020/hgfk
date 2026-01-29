@@ -1,0 +1,37 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Syntax_pass",
+		"Class":"EnumWidget_Syntax_pass"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Syntax_pass.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Syntax_pass.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_Procedure.NG_FlowControl",
+		"NodeIcon":"../../images/NodeWidget/N_Syntax_pass.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"L",
+		"NodeMenuPos":"81",
+		"NodePinYin":"Passkongyuju,Passkyj",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Syntax_pass.node_property.ItemTitle1",
+		"Items":
+		[
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "",
+		"py_fun": "pass"
+	}
+}

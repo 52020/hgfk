@@ -1,0 +1,141 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Cloud_BatchDownload",
+		"Class":"EnumWidget_Cloud_BatchDownload"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Cloud_BatchDownload.node_panel.NodeTitle",
+		"NodeDesc":"com.EnumWidget_Cloud_BatchDownload.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_Server.NG_Cloud_File",
+		"NodeIcon":"../../images/NodeWidget/N_Cloud_DownloadFile_BatchDownload.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"31",
+		"NodePinYin":"piliangxiazaiwenjian,plxzwj", 
+		"Pins": 
+		[
+			{
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret1",
+				"Pin_ItemName":"com.EnumWidget_Cloud_BatchDownload.node_panel.Pin_ItemName1",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Cloud_BatchDownload.node_property.ItemTitle",
+		"Items":
+		[
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "file_name=",
+                "Item_Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name1",
+                "Item_Desc": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_filename",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "up_type=",
+                "Item_Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name6",
+                "Item_Desc": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Desc6",
+                "Item_EnumID": "EPC_up_type",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Desc6.name2",
+                        "Value": "'proc'"
+                    },
+					{
+                        "Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name6.name1",
+                        "Value": "'user'"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "file_tags=",
+                "Item_Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name5",
+                "Item_Desc": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Desc5",
+                "Item_EnumID": "EPC_file_tags",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+			{
+                "Item_Type": "EIT_Path",
+                "Item_ParName": "save_path=",
+                "Item_Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name2",
+                "Item_Desc": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_down_path",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "*.*",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "whether_overwrite=",
+                "Item_Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name7",
+                "Item_Desc": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Desc7",
+                "Item_EnumID": "EPC_whether_overwrite",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name7.Name1",
+                        "Value": "True"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Cloud_BatchDownload.node_property.Item_Name7.Name2",
+                        "Value": "False"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            }
+			
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.iplatform as iplatform",
+		"py_fun": "iplatform.batch_download_v2(%s)"
+	}
+}

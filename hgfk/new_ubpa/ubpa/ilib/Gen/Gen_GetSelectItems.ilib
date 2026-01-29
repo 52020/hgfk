@@ -1,0 +1,36 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Gen_GetSelectItems",
+		"Class":"EnumWidget_Gen_GetSelectItems"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Gen_GetSelectItems.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Gen_GetSelectItems.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_InterfaceAutomation.NG_Control",
+		"NodeIcon":"../../images/NodeWidget/N_Java_GetSelectItems.png",
+		"IsPickup":"1",
+		"IsPreview":"1",
+		"PinMSide":"LR",
+		"NodeMenuPos":"71",
+		"NodePickupType":"java",
+		"NodePinYin":"huoquxuanzexiang(Java),hqxzx(Java)",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Gen_GetSelectItems.node_property.ItemTitle1",
+		"Items":
+		[
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll"
+	}
+}

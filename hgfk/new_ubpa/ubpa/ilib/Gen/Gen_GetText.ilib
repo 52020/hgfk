@@ -1,0 +1,35 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Gen_GetText",
+		"Class":"EnumWidget_Gen_GetText"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Gen_GetText.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Gen_GetText.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_InterfaceAutomation.NG_Control",
+		"NodeIcon":"../../images/NodeWidget/N_Gen_GetText.png",
+		"IsPickup":"1",
+		"IsPreview":"1",
+		"PinMSide":"LR",
+		"NodeMenuPos":"21",
+		"NodePinYin":"huoquwenben,hqwb",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"0",
+		"ItemTitle":"com.EnumWidget_Gen_GetText.node_property.ItemTitle1",
+		"Items":
+		[
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll"
+	}
+}

@@ -1,0 +1,69 @@
+{
+    "node_gen": {
+        "ID": "Custom_boolean001",
+        "CustomNo": "boolean001",
+        "Class": ""
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_boolean001.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_boolean001.node_panel.NodeDesc",
+        "NodeMenuGroup":"com.menu.widgetgroup.NG_Procedure.NG_Boolean",
+        "NodeIcon": "../../../images/NodeWidget/N_Operator_B.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide":"LR",
+		"NodeMenuPos":"1",
+        "NodePinYin": "dengyu,dy,boolean",
+        "Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.Custom_boolean001.node_panel.Pin_ItemName1",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_boolean001.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "a=",
+                "Item_Name": "com.Custom_boolean001.node_property.Item_Name1",
+                "Item_Desc": "com.Custom_boolean001.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_a",
+                "Item_Value": "",
+                "Item_DataType": "object",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "b=",
+                "Item_Name": "com.Custom_boolean001.node_property.Item_Name2",
+                "Item_Desc": "com.Custom_boolean001.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_b",
+                "Item_Value": "",
+                "Item_DataType": "object",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.itools.rpa_fun as rpa_fun",
+        "py_fun": "rpa_fun.equal(%s)"
+    }
+}

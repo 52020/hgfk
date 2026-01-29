@@ -1,0 +1,107 @@
+{
+	"node_gen": {
+		"ID": "EnumWidget_Custom_Dialog",
+		"Class": "EnumWidget_Custom_Dialog"
+	},
+	"node_panel": {
+		"NodeTitle": "com.EnumWidget_Custom_Dialog.node_panel.NodeTitle1",
+		"NodeDesc": "com.EnumWidget_Custom_Dialog.node_panel.NodeDesc",
+		"NodeMenuGroup": "com.menu.widgetgroup.NG_System.NG_Dialog",
+		"NodeIcon": "../../images/NodeWidget/N_Code_Custom.png",
+		"IsPickup": "0",
+		"IsPreview": "0",
+		"PinMSide": "LR",
+		"NodeMenuPos": "7",
+		"NodePinYin": "gaojixiaoxikuang,gjxxk",
+		"Pins":
+		[
+		]
+	},
+	"node_property": {
+		"HasGenItem": "1",
+		"ItemTitle": "com.EnumWidget_Custom_Dialog.node_property.ItemTitle1",
+		"Items":
+		[{
+				"Item_Type": "EIT_Lineedit",
+				"Item_Name": "com.EnumWidget_Custom_Dialog.node_property.Item_Name1",
+				"Item_ParName":"title",
+				"Item_EnumID": "EPC_title",
+				"Item_Value": "com.EnumWidget_Custom_Dialog.node_property.Item_Value1",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "1",
+				"Item_GroupID": "11"
+			}, {
+				"Item_Type": "EIT_Lineedit",
+				"Item_Name": "com.EnumWidget_Custom_Dialog.node_property.Item_Name2",
+				"Item_ParName":"width",
+				"Item_EnumID": "EPC_width",
+				"Item_Value": "450",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "1",
+				"Item_GroupID": "11"
+			}, {
+				"Item_Type": "EIT_Lineedit",
+				"Item_Name": "com.EnumWidget_Custom_Dialog.node_property.Item_Name3",
+				"Item_ParName":"height",
+				"Item_EnumID": "EPC_height",
+				"Item_Value": "600",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "1",
+				"Item_GroupID": "11"
+			}, {
+				"Item_Type": "EIT_Lineedit",
+				"Item_Name": "com.EnumWidget_Custom_Dialog.node_property.Item_Name4",
+				"Item_ParName":"timeout",
+				"Item_EnumID": "EPC_timeout",
+				"Item_Value": "60",
+				"Item_ExtCheck": "0",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "1",
+				"Item_GroupID": "11"
+			}, {
+				"Item_Type": "EIT_Button",
+                "Item_Button_Text":"com.EnumWidget_Custom_Dialog.node_property.Item_Button_Text5",
+				"Item_Name": "com.EnumWidget_Custom_Dialog.node_property.Item_Name5",
+				"Item_ParName":"detail",
+				"Item_EnumID": "EPC_detail",
+				"Item_Value": "",
+                "Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "1",
+				"Item_GroupID": "12"
+			},
+			{
+				"Item_Type":"EIT_Preview",
+				"Item_Name":"",
+				"Item_EnumID":"EP_SNAP_SHOT_PREVIEW",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"1",
+				"Item_GroupID":"13"
+			}	
+		]
+	},
+	"node_python": {
+		"dl_funs": "RPANodes_PyCode",
+		"dl_path": "RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.ibox as ibox",
+		"py_fun": "ibox.show_custom_dialog",
+        "py_par": []
+	}
+}

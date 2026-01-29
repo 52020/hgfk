@@ -1,0 +1,35 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Gen_MouseDBClick",
+		"Class":"EnumWidget_Gen_MouseDBClick"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Gen_MouseDBClick.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Gen_MouseDBClick.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_InterfaceAutomation.NG_Mouse",
+		"NodeIcon":"../../images/NodeWidget/N_Gen_MouseDBClick.png",
+		"IsPickup":"1",
+		"IsPreview":"1",
+		"PinMSide":"LR",
+		"NodeMenuPos":"31",
+		"NodePinYin":"shubiaoshuangji,sbsj,boolean",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"0",
+		"ItemTitle":"com.EnumWidget_Gen_MouseDBClick.node_property.ItemTitle1",
+		"Items":
+		[
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll"
+	}
+}

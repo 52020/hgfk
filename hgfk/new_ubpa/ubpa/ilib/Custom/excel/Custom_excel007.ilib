@@ -1,0 +1,30 @@
+{
+    "node_gen": {
+        "ID": "Custom_excel007",
+        "CustomNo": "excel007",
+        "Class": ""
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_excel007.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_excel007.node_panel.NodeDesc",
+        "NodeMenuGroup":"com.menu.widgetgroup.NG_Application.NG_Excel",
+        "NodeIcon": "../../../images/NodeWidget/N_Excel.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide":"LR",
+		"NodeMenuPos":"181",
+        "NodePinYin": "guanbiexcelyingyong,gbexcelyy",
+        "Pins": []
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_excel007.node_property.ItemTitle",
+        "Items": []
+    },
+    "node_python": {
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "dl_funs": "RPANodes_GenPyCodes",
+        "py_import": "import ubpa.iexcel as iexcel",
+        "py_fun": "iexcel.close_excel_apps(%s)"
+    }
+}

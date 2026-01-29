@@ -1,0 +1,66 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Robot_Fun",
+		"Class":"EnumWidget_Robot_Fun"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Robot_Fun.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Robot_Fun.node_panel.NodeDesc",
+		"NodeMenuGroup":"",
+		"NodeIcon":"../../images/NodeWidget/N_Robot.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"1",
+		"NodePinYin":"jiqirenhanshu,jqrhs",
+		"Pins":
+		[
+            {
+				"Pin_Type":"EPin_Ret",
+				"Pin_EnumID":"EPin_Ret1",
+				"Pin_ItemName":"com.EnumWidget_Robot_Fun.node_panel.Pin_ItemName1",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Robot_Fun.node_property.ItemTitle1",
+		"Items":
+		[
+            {
+                "Item_Type":"EIT_Lineedit",
+                "Item_Name":"com.EnumWidget_Robot_Fun.node_property.Items1",
+                "Item_EnumID":"EPin_Robot_OBJ",
+                "Item_NotPanel":"0",
+                "Item_Value":"",
+                "Item_ExtCheck":"",
+                "Item_Maxlen":"128",
+                "Item_Minlen":"1",
+                "Item_IsNumber":"0",
+                "Item_GroupID":"12|-1"
+            },
+            {
+				"Item_Type":"EIT_RobotFun",
+				"Item_EnumID":"EP_ROBOTFUN",
+				"Item_NotPanel":"1",
+				"Item_GroupID":"11",
+                "Items":
+                [
+                
+                ]
+            }
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_Fun",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "",
+		"py_fun": "%s.%s(%s)"
+	}
+}

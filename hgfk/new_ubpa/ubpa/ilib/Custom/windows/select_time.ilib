@@ -1,0 +1,110 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_select_time",
+		"Class":"EnumWidget_select_time"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.select_time.node_panel.NodeTitle",
+		"NodeDesc":"com.select_time.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_System.NG_Dialog",
+		"NodeIcon":"../../../images/NodeWidget/N_File_TimeAndDate.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"51",
+		"NodePinYin": "xuanzeshijianriqi,xzsjrq",
+		"Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.select_time.node_panel.Pin_ItemName",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }
+        ]
+	},
+	"node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.select_time.node_panel.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "prompt_info=",
+                "Item_Name": "com.select_time.node_property.Item_Name1",
+                "Item_Desc": "com.select_time.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_prompt_info",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "date_type=",
+                "Item_Name": "com.select_time.node_property.Item_Name2",
+                "Item_Desc": "com.select_time.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_date_type",
+                "Item_Value": "1",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.select_time.node_property.Item_Name2.name1",
+                        "Value": "com.select_time.node_property.Item_Name2.value1"
+                    },
+                    {
+                        "Name": "com.select_time.node_property.Item_Name2.name2",
+                        "Value": "com.select_time.node_property.Item_Name2.value2"
+                    },
+                    {
+                        "Name": "com.select_time.node_property.Item_Name2.name3",
+                        "Value": "com.select_time.node_property.Item_Name2.value3"
+                    },
+                    {
+                        "Name": "com.select_time.node_property.Item_Name2.name4",
+                        "Value": "com.select_time.node_property.Item_Name2.value4"
+                    },
+                    {
+                        "Name": "com.select_time.node_property.Item_Name2.name5",
+                        "Value": "com.select_time.node_property.Item_Name2.value5"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "time_out=",
+                "Item_Name": "com.select_time.node_property.Item_Name3",
+                "Item_Desc": "com.select_time.node_property.Item_Desc3",
+                "Item_EnumID": "EPC_time_out",
+                "Item_Value": "",
+				"Item_UnitIcon":"F_icon_(s)_32px.png",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            }
+        ]
+    },
+	"node_python":
+	{
+		"dl_funs":"RPANodes_GenPyCodes",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.itools.rpa_fun as rpa_fun",
+		"py_fun": "rpa_fun.select_time(%s)"
+	}
+}
+

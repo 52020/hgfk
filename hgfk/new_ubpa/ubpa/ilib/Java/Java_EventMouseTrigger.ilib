@@ -1,0 +1,204 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Java_EventMouseTrigger",
+		"Class":"EnumWidget_Java_EventMouseTrigger"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Java_EventMouseTrigger.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Java_EventMouseTrigger.node_panel.NodeDesc",
+		"NodeMenuGroup":"",
+		"NodeIcon":"../../images/NodeWidget/N_Region_ClickPos.png",
+		"IsPickup":"1",
+		"IsPreview":"1",
+		"PinMSide":"LR",
+		"NodeMenuPos":"1",
+		"NodePinYin":"dianjichufa,djcf",
+		"Pins":
+		[
+            {
+				"Pin_Type":"EPin_Sub_Process",
+				"Pin_EnumID":"EPin_Sub_Process",
+				"Pin_ItemName":"com.EnumWidget_Java_EventMouseTrigger.node_panel.Pin_ItemName1",
+				"Pin_Side":"R",
+				"Pin_GroupID":"-1"
+			}
+            
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"1",
+		"ItemTitle":"com.EnumWidget_Java_EventMouseTrigger.node_property.ItemTitle1",
+		"Items":
+		[
+			{
+				"Item_Type":"EIT_Combobox",
+				"Item_Name":"com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name2",
+				"Item_EnumID":"EP_CONTROL_MODE",
+                "Item_ParName": "mode=",
+				"Item_Value":"0",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_GroupID":"11",                           
+                "Item_DataType": "",                             
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name2.name1",
+                        "Value": "com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name2.value1"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name2.name2",
+                        "Value": "com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name2.value2"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name2.name3",
+                        "Value": "com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name2.value3"
+                    }
+                        ]                                
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name3",
+				"Item_EnumID":"EP_WINDOW_PROGRAM",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"1",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"control/program",
+				"Item_GroupID":"15"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name4",
+				"Item_EnumID":"EP_WINDOW_TITLE",
+				"Item_ParName":"",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"1",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"control/title",
+				"Item_GroupID":"15"
+			},
+			{
+				"Item_Type":"",
+				"Item_Name":"com.EnumWidget_Firefox_EventMouseTrigger.node_property.Item_Name1",
+				"Item_EnumID":"EP_CONTROL_PROCESSER",
+				"Item_ParName":"callback=self.|None",
+				"Item_DataType":"",
+				"Item_Value":"0",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"1",
+				"Items":
+				[
+				],
+				"Item_GroupID":"11"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name5",
+				"Item_EnumID":"EP_WINDOW_CLASS",
+				"Item_DataType":"string",
+				"Item_Value":"",
+				"Item_ExtCheck":"1",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"control/className",
+				"Item_GroupID":"15"
+			},
+			{
+				"Item_Type":"EIT_Lineedit",
+				"Item_Name":"com.EnumWidget_Java_EventMouseTrigger.node_property.Item_Name6",
+				"Item_EnumID":"EP_CONTROL_JAVA_PROPERTY",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"0",
+				"Item_uisubstance":"control/hierarchy",	
+				"Item_GroupID":"12"
+			},
+			{
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java.node_property.jvmprogram",
+                "Item_EnumID": "EP_CONTROL_JVMPROGRAM",
+                "Item_ParName": "",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/jvmprogram",
+                "Item_GroupID": "12"
+            },            
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java.node_property.jvmtitle",
+                "Item_EnumID": "EP_CONTROL_JVMTITLE",
+                "Item_ParName": "",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/jvmtitle",
+                "Item_GroupID": "12"
+            },             
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_Name": "com.EnumWidget_Java.node_property.jvmclassName",
+                "Item_EnumID": "EP_CONTROL_JVMCLASSNAME",
+                "Item_ParName": "",
+                "Item_DataType": "string",
+                "Item_Value": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_uisubstance": "control/jvmclassName",
+                "Item_GroupID": "12"
+            },  
+			{
+				"Item_Type":"EIT_Preview",
+				"Item_Name":"",
+				"Item_EnumID":"EP_SNAP_SHOT_PREVIEW",
+				"Item_Value":"",
+				"Item_ExtCheck":"",
+				"Item_Maxlen":"128",
+				"Item_Minlen":"1",
+				"Item_IsNumber":"0",
+				"Item_NotPanel":"1",
+				"Item_uisubstance":"snapshot/snapshot_preview",
+				"Item_GroupID":"13"
+			}
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.imonitor as imonitor",
+		"py_fun": "imonitor.start_monitor(%s)"
+	}
+}

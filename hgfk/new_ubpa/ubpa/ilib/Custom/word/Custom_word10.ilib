@@ -1,0 +1,104 @@
+{
+    "node_gen": {
+        "ID": "EnumWidget_Word_Custom_word10",
+        "Class": "EnumWidget_Word_Custom_word10"
+    },
+    "node_panel": {
+        "NodeTitle": "com.EnumWidget_Word_Custom_word10.node_panel.NodeTitle",
+        "NodeDesc": "com.EnumWidget_Word_Custom_word10.node_panel.NodeDesc",
+        "NodeMenuGroup": "com.menu.widgetgroup.NG_Application.NG_Word",
+        "NodeIcon": "../../../images/NodeWidget/N_icon_assembly_word_16px.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide": "LR",
+        "NodeMenuPos": "101",
+        "NodePinYin": "chazhaowenbenhoushezhiguangbiaoweizhi,czwbhszgbwz,chazhaoshezhiguangbiaoweizhi,czszgbwz"
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.EnumWidget_Word_Custom_word10.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "word_obj=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word10.node_property.Items0.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word10.node_property.Items0.Item_Desc",
+                "Item_EnumID": "EIT_Document_object",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "text=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word10.node_property.Items1.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word10.node_property.Items1.Item_Desc",
+                "Item_EnumID": "EIT_text",
+                "Item_Value": "''",
+                "Item_DataType": "string",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "position_type=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word10.node_property.Items2.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word10.node_property.Items2.Item_Desc",
+                "Item_EnumID": "ELT_position_type",
+                "Item_Value": "2",
+                "Item_DataType": "int",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12",
+                "Items": [
+                    {
+                        "Name": "com.EnumWidget_Word_Custom_word10.node_property.Items2.Items1",
+                        "Value": "3"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Word_Custom_word10.node_property.Items2.Items2",
+                        "Value": "2"
+                    },
+                    {
+                        "Name": "com.EnumWidget_Word_Custom_word10.node_property.Items2.Items3",
+                        "Value": "1"
+                    }
+                ]
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "n_type=",
+                "Item_Name": "com.EnumWidget_Word_Custom_word10.node_property.Items3.Item_Name",
+                "Item_Desc": "com.EnumWidget_Word_Custom_word10.node_property.Items3.Item_Desc",
+                "Item_EnumID": "EIT_n_type",
+                "Item_Value": "1",
+                "Item_DataType": "int",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.iword as iword",
+        "py_fun": "iword.set_cursor_after_find_text(%s)"
+    }
+}

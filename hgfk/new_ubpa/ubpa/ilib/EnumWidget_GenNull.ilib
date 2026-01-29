@@ -1,0 +1,40 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Gen_Null",
+		"Class":""
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.widget.gennull.titile",
+		"NodeDesc":"com.widget.gennull.desc",
+		"NodePinYin":"null",
+		"NodeMenuGroup":"",
+		"NodeMenuPos":"0",
+		"NodeIcon":"",
+		"IsPickup":"0",
+		"NodePickupType":"cs",
+		"IsPreview":"0",
+		"PinMSide":"",
+		"NodeMenuPos":"1",
+		"Pins":
+		[
+			
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"0",
+		"ItemTitle":"NULL",
+		"Items":
+		[
+			
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_Gen_Null",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": ""
+	}
+}

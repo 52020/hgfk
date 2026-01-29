@@ -1,0 +1,425 @@
+{
+    "node_gen": {
+        "ID": "Custom_df011",
+        "CustomNo": "df011",
+        "Class": ""
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_df011.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_df011.node_panel.NodeDesc",
+        "NodeMenuGroup":"com.menu.widgetgroup.NG_Procedure.NG_TableData",
+        "NodeIcon": "../../../images/NodeWidget/N_assembly_pandas.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide":"LR",
+		"NodeMenuPos":"111",
+        "NodePinYin": "daochuhtml,dchtml",
+        "Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret",
+                "Pin_ItemName": "com.Custom_df011.node_panel.Pin_ItemName1",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_df011.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "df=",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name1",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_df",
+                "Item_Value": "",
+                "Item_DataType": "DataFrame",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_File",
+                "Item_ParName": "path=",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name2",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_path",
+                "Item_Value": "",
+                "Item_DataType": "string or file handle",
+                "Item_FileFilter": "(*)",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "columns=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name3",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc3",
+                "Item_EnumID": "EPC_columns",
+                "Item_Value": "None",
+                "Item_DataType": "sequence",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "col_space=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name4",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc4",
+                "Item_EnumID": "EPC_col_space",
+                "Item_Value": "None",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "header=|True",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name5",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc5",
+                "Item_EnumID": "EPC_header",
+                "Item_Value": "1",
+                "Item_DataType": "int,list of ints",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name5.name1",
+                        "Value": "com.Custom_df011.node_property.Item_Name5.value1"
+                    },
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name5.name2",
+                        "Value": "com.Custom_df011.node_property.Item_Name5.value2"
+                    }
+                ],
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "index=|True",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name6",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc6",
+                "Item_EnumID": "EPC_index",
+                "Item_Value": "1",
+                "Item_DataType": "boolean",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name6.name1",
+                        "Value": "com.Custom_df011.node_property.Item_Name6.value1"
+                    },
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name6.name2",
+                        "Value": "com.Custom_df011.node_property.Item_Name6.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "na_rep=|'NaN'",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name7",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc7",
+                "Item_EnumID": "EPC_na_rep",
+                "Item_Value": "'NaN'",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "formatters=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name8",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc8",
+                "Item_EnumID": "EPC_formatters",
+                "Item_Value": "None",
+                "Item_DataType": "list or dict of one-parameter functions",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "float_format=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name9",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc9",
+                "Item_EnumID": "EPC_float_format",
+                "Item_Value": "None",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "sparsify=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name10",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc10",
+                "Item_EnumID": "EPC_sparsify",
+                "Item_Value": "None",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "index_names=|True",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name11",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc11",
+                "Item_EnumID": "EPC_index_names",
+                "Item_Value": "1",
+                "Item_DataType": "boolean",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name11.name1",
+                        "Value": "com.Custom_df011.node_property.Item_Name11.value1"
+                    },
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name11.name2",
+                        "Value": "com.Custom_df011.node_property.Item_Name11.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "justify=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name12",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc12",
+                "Item_EnumID": "EPC_justify",
+                "Item_Value": "None",
+                "Item_DataType": "{‘left’, ‘right’}",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "bold_rows=|True",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name13",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc13",
+                "Item_EnumID": "EPC_bold_rows",
+                "Item_Value": "1",
+                "Item_DataType": "boolean",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name13.name1",
+                        "Value": "com.Custom_df011.node_property.Item_Name13.value1"
+                    },
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name13.name2",
+                        "Value": "com.Custom_df011.node_property.Item_Name13.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "classes=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name14",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc14",
+                "Item_EnumID": "EPC_classes",
+                "Item_Value": "None",
+                "Item_DataType": "str or list or tuple",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "escape=|True",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name15",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc15",
+                "Item_EnumID": "EPC_escape",
+                "Item_Value": "1",
+                "Item_DataType": "boolean",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name15.name1",
+                        "Value": "com.Custom_df011.node_property.Item_Name15.value1"
+                    },
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name15.name2",
+                        "Value": "com.Custom_df011.node_property.Item_Name15.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "max_rows=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name16",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc16",
+                "Item_EnumID": "EPC_max_rows",
+                "Item_Value": "None",
+                "Item_DataType": "Maximum number of rows to show before truncating",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "max_cols=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name17",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc17",
+                "Item_EnumID": "EPC_max_cols",
+                "Item_Value": "None",
+                "Item_DataType": "Maximum number of columns to show before truncating",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "show_dimensions=|False",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name18",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc18",
+                "Item_EnumID": "EPC_show_dimensions",
+                "Item_Value": "0",
+                "Item_DataType": "boolean",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name18.name1",
+                        "Value": "com.Custom_df011.node_property.Item_Name18.value1"
+                    },
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name18.name2",
+                        "Value": "com.Custom_df011.node_property.Item_Name18.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "notebook=|False",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name19",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc19",
+                "Item_EnumID": "EPC_notebook",
+                "Item_Value": "0",
+                "Item_DataType": "boolean",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name19.name1",
+                        "Value": "com.Custom_df011.node_property.Item_Name19.value1"
+                    },
+                    {
+                        "Name": "com.Custom_df011.node_property.Item_Name19.name2",
+                        "Value": "com.Custom_df011.node_property.Item_Name19.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "decimal=|'.'",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name20",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc20",
+                "Item_EnumID": "EPC_decimal",
+                "Item_Value": "'.'",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "border=|None",
+                "Item_Name": "com.Custom_df011.node_property.Item_Name21",
+                "Item_Desc": "com.Custom_df011.node_property.Item_Desc21",
+                "Item_EnumID": "EPC_border",
+                "Item_Value": "None",
+                "Item_DataType": "string (length 1)",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.itools.rpa_pandas as rpa_pandas",
+        "py_fun": "rpa_pandas.to_html(%s)"
+    }
+}

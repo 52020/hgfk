@@ -1,0 +1,134 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_select_file",
+		"Class":"EnumWidget_select_file"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.select_file.node_panel.NodeTitle",
+		"NodeDesc":"com.select_file.node_panel.NodeDesc",
+		"NodeMenuGroup":"com.menu.widgetgroup.NG_System.NG_Dialog",
+		"NodeIcon":"../../../images/NodeWidget/N_File_file.png",
+		"IsPickup":"0",
+		"IsPreview":"0",
+		"PinMSide":"LR",
+		"NodeMenuPos":"41",
+		"NodePinYin": "xuanzewenjian,xzwj",
+		"Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.select_file.node_panel.Pin_ItemName",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }
+        ]
+	},
+	"node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.select_file.node_panel.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "title=",
+                "Item_Name": "com.select_file.node_property.Item_Name3",
+                "Item_Desc": "com.select_file.node_property.Item_Desc3",
+                "Item_EnumID": "EPC_title",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+			{
+                "Item_Type": "EIT_Path",
+                "Item_ParName": "folder_path=",
+                "Item_Name": "com.select_file.node_property.Item_Name1",
+                "Item_Desc": "com.select_file.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_folder_path",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_ComboboxEditNoTextCheck",
+                "Item_ParName": "file_type=",
+                "Item_Name": "com.select_file.node_property.Item_Name2",
+                "Item_Desc": "com.select_file.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_file_type",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name1",
+                        "Value": "com.select_file.node_property.Item_Name2.value1"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name2",
+                        "Value": "com.select_file.node_property.Item_Name2.value2"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name3",
+                        "Value": "com.select_file.node_property.Item_Name2.value3"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name4",
+                        "Value": "com.select_file.node_property.Item_Name2.value4"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name5",
+                        "Value": "com.select_file.node_property.Item_Name2.value5"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name6",
+                        "Value": "com.select_file.node_property.Item_Name2.value6"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name7",
+                        "Value": "com.select_file.node_property.Item_Name2.value7"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name8",
+                        "Value": "com.select_file.node_property.Item_Name2.value8"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name9",
+                        "Value": "com.select_file.node_property.Item_Name2.value9"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name10",
+                        "Value": "com.select_file.node_property.Item_Name2.value10"
+                    },
+                    {
+                        "Name": "com.select_file.node_property.Item_Name2.name11",
+                        "Value": "com.select_file.node_property.Item_Name2.value11"
+                    }
+                ],
+                "Item_GroupID": "12"
+            }
+        ]
+    },
+	"node_python":
+	{
+		"dl_funs":"RPANodes_GenPyCodes",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.itools.rpa_fun as rpa_fun",
+		"py_fun": "rpa_fun.select_file(%s)"
+	}
+}
+

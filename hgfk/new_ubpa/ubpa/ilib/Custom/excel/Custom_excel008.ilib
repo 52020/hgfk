@@ -1,0 +1,102 @@
+{
+    "node_gen": {
+        "ID": "Custom_excel008",
+        "CustomNo": "excel008",
+        "Class": ""
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_excel008.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_excel008.node_panel.NodeDesc",
+        "NodeMenuGroup":"com.menu.widgetgroup.NG_Application.NG_Excel",
+        "NodeIcon": "../../../images/NodeWidget/N_Excel.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide":"LR",
+		"NodeMenuPos":"191",
+        "NodePinYin": "shanchuhang,sch",
+        "Pins": []
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_excel008.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_File",
+                "Item_ParName": "path=",
+                "Item_Name": "com.Custom_excel008.node_property.Item_Name1",
+                "Item_Desc": "com.Custom_excel008.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_path",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_FileFilter": "*.xls;*.xlsx",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "sheet=|0",
+                "Item_Name": "com.Custom_excel008.node_property.Item_Name2",
+                "Item_Desc": "com.Custom_excel008.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_sheet",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "cell=|'A1'",
+                "Item_Name": "com.Custom_excel008.node_property.Item_Name3",
+                "Item_Desc": "com.Custom_excel008.node_property.Item_Desc3",
+                "Item_EnumID": "EPC_cell",
+                "Item_Value": "'A1'",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Combobox",
+                "Item_ParName": "file_type=|'excel'",
+                "Item_Name": "com.Custom_excel008.node_property.Item_Name4",
+                "Item_Desc": "com.Custom_excel008.node_property.Item_Desc4",
+                "Item_EnumID": "EPC_file_type",
+                "Item_Value": "0",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Items": [
+                    {
+                        "Name": "com.Custom_excel008.node_property.Item_Name4.name1",
+                        "Value": "com.Custom_excel008.node_property.Item_Name4.value1"
+                    },
+                    {
+                        "Name": "com.Custom_excel008.node_property.Item_Name4.name2",
+                        "Value": "com.Custom_excel008.node_property.Item_Name4.value2"
+                    }
+                ],
+                "Item_GroupID": "12"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "dl_funs": "RPANodes_GenPyCodes",
+        "py_import": "import ubpa.iexcel as iexcel",
+        "py_fun": "iexcel.delete_row(%s)"
+    }
+}

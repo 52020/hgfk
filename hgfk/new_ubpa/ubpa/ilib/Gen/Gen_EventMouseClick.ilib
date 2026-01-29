@@ -1,0 +1,35 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Gen_EventMouseClick",
+		"Class":"EnumWidget_Gen_EventMouseClick"
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.EnumWidget_Gen_EventMouseClick.node_panel.NodeTitle1",
+		"NodeDesc":"com.EnumWidget_Gen_EventMouseClick.node_panel.NodeDesc",
+		"NodeMenuGroup":"",
+		"NodeIcon":"../../images/NodeWidget/N_Region_ClickPos.png",
+		"IsPickup":"1",
+		"IsPreview":"1",
+		"PinMSide":"LR",
+		"NodeMenuPos":"1",
+		"NodePinYin":"dianjichufa,djcf",
+		"Pins":
+		[
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"0",
+		"ItemTitle":"com.EnumWidget_Gen_EventMouseClick.node_property.ItemTitle1",
+		"Items":
+		[
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_PyCode",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll"
+	}
+}

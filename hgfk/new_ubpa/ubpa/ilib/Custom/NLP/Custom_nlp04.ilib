@@ -1,0 +1,99 @@
+{
+    "node_gen": {
+        "ID": "Custom_nlp04",
+        "CustomNo": "nlp04",
+        "Class": ""
+    },
+    "node_panel": {
+        "NodeTitle": "com.Custom_nlp04.node_panel.NodeTitle",
+        "NodeDesc": "com.Custom_nlp04.node_panel.NodeDesc",
+        "NodeMenuGroup":"com.menu.widgetgroup.NG_Application.NG_NLP",
+        "NodeIcon": "../../../images/NodeWidget/N_OCR_Article.png",
+        "IsPickup": "0",
+        "IsPreview": "0",
+        "PinMSide":"LR",
+		"NodeMenuPos":"41",
+        "NodePinYin": "wenzhangbiaoqian,wzbq,list",
+        "Pins": [
+            {
+                "Pin_Type": "EPin_Ret",
+                "Pin_EnumID": "EPin_Ret1",
+                "Pin_ItemName": "com.Custom_nlp04.node_panel.Pin_ItemName1",
+                "Pin_Side": "R",
+                "Pin_GroupID": "-1"
+            }
+        ]
+    },
+    "node_property": {
+        "HasGenItem": "1",
+        "ItemTitle": "com.Custom_nlp04.node_property.ItemTitle",
+        "Items": [
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "title=",
+                "Item_Name": "com.Custom_nlp04.node_property.Item_Name1",
+                "Item_Desc": "com.Custom_nlp04.node_property.Item_Desc1",
+                "Item_EnumID": "EPC_title",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "content=",
+                "Item_Name": "com.Custom_nlp04.node_property.Item_Name2",
+                "Item_Desc": "com.Custom_nlp04.node_property.Item_Desc2",
+                "Item_EnumID": "EPC_content",
+                "Item_Value": "",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12|-1"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "apiKey=|''",
+                "Item_Name": "com.Custom_nlp04.node_property.Item_Name3",
+                "Item_Desc": "com.Custom_nlp04.node_property.Item_Desc3",
+                "Item_EnumID": "EPC_apiKey",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "secretKey=|''",
+                "Item_Name": "com.Custom_nlp04.node_property.Item_Name4",
+                "Item_Desc": "com.Custom_nlp04.node_property.Item_Desc4",
+                "Item_EnumID": "EPC_secretKey",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            }
+        ]
+    },
+    "node_python": {
+        "dl_funs": "RPANodes_GenPyCodes",
+        "dl_path": "RPANodeCompileFun_x64_mt.dll",
+        "py_import": "import ubpa.iocr as iocr",
+        "py_fun": "iocr.keyword_recognize(%s)"
+    }
+}

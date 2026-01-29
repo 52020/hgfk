@@ -1,0 +1,40 @@
+{
+	"node_gen":
+	{
+		"ID":"EnumWidget_Begin",
+		"Class":""
+	},
+	"node_panel":
+	{
+		"NodeTitle":"com.widget.begin.titile",
+		"NodeDesc":"com.widget.begin.desc",
+		"NodePinYin":"begin",
+		"NodeMenuGroup":"",
+		"NodeMenuPos":"0",
+		"NodeIcon":"icon.png",
+		"IsPickup":"0",
+		"NodePickupType":"cs",
+		"IsPreview":"0",
+		"PinMSide":"R",
+		"NodeMenuPos":"1",
+		"Pins":
+		[
+			
+		]
+	},
+	"node_property":
+	{
+		"HasGenItem":"0",
+		"ItemTitle":"开始",
+		"Items":
+		[
+			
+		]
+	},
+	"node_python":
+	{
+		"dl_funs":"RPANodes_Begin",
+		"dl_path":"RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import time\nimport pdb\nfrom ubpa.ilog import ILog\nimport getopt\nfrom sys import argv\nimport sys\nimport os\nfrom ubpa.base_img import *\n"
+	}
+}

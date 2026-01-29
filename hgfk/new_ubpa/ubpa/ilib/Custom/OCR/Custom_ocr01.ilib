@@ -1,0 +1,111 @@
+{
+	"node_gen": {
+		"ID": "Custom_ocr01",
+		"CustomNo": "ocr01",
+		"Class": ""
+	},
+	"node_panel": {
+		"NodeTitle": "com.Custom_ocr01.node_panel.NodeTitle",
+		"NodeDesc": "com.Custom_ocr01.node_panel.NodeDesc",
+		"NodeMenuGroup": "com.menu.widgetgroup.NG_Application.NG_OCR",
+		"NodeIcon": "../../../images/NodeWidget/N_OCR.png",
+		"IsPickup": "0",
+		"IsPreview": "0",
+		"PinMSide": "LR",
+		"NodeMenuPos": "1",
+		"NodePinYin": "huoquocrwenben,hqocrwb",
+		"Pins": [
+			{
+				"Pin_Type": "EPin_Ret",
+				"Pin_EnumID": "EPin_Ret1",
+				"Pin_ItemName": "com.Custom_ocr01.node_panel.Pin_ItemName",
+				"Pin_Side": "R",
+				"Pin_GroupID": "-1"
+			}
+		]
+	},
+	"node_property": {
+		"HasGenItem": "1",
+		"ItemTitle": "com.Custom_ocr01.node_property.ItemTitle",
+		"Items": [
+			{
+				"Item_Type": "EIT_File",
+				"Item_ParName": "image_path=",
+				"Item_Name": "com.Custom_ocr01.node_property.Item_Name",
+				"Item_Desc": "com.Custom_ocr01.node_property.Item_Desc",
+				"Item_EnumID": "EPC_image_path",
+				"Item_Value": "",
+				"Item_DataType": "",
+				"Item_FileFilter": "*.*",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "0",
+				"Item_GroupID": "12|-1"
+			},
+			{
+                "Item_Type": "EIT_ComboboxItems",
+                "Item_ParName": "ocr_engine=",
+                "Item_Name": "com.Custom_ocr01.ocr_engine.Item_Name",
+                "Item_Desc": "com.Custom_ocr01.ocr_engine.Item_Desc",
+                "Item_EnumID": "EPC_ocr_engine",
+                "Item_DataType": "",
+                "Item_Value": "0",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "1",
+                "Items": [
+                            {
+                                "Name": "com.Custom_ocr01.ocr_engine.Items0.Name",
+                                "Value": "com.Custom_ocr01.ocr_engine.Items0.Value"
+                            },
+                            {
+                                "Name": "com.Custom_ocr01.ocr_engine.Items1.Name",
+                                "Value": "com.Custom_ocr01.ocr_engine.Items1.Value"
+                            }
+                        ],
+                "Item_GroupID": "12"
+            },            
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "apiKey=|''",
+                "Item_Name": "apiKey",
+                "Item_Desc": "apiKey",
+                "Item_EnumID": "EPC_apiKey",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            },
+            {
+                "Item_Type": "EIT_Lineedit",
+                "Item_ParName": "secretKey=|''",
+                "Item_Name": "secretKey",
+                "Item_Desc": "secretKey",
+                "Item_EnumID": "EPC_secretKey",
+                "Item_Value": "''",
+                "Item_DataType": "",
+                "Item_ExtCheck": "",
+                "Item_Maxlen": "128",
+                "Item_Minlen": "1",
+                "Item_IsNumber": "0",
+                "Item_NotPanel": "0",
+                "Item_GroupID": "12"
+            }
+                                                
+		]
+	},
+	"node_python": {
+		"dl_funs": "RPANodes_GenPyCodes",
+		"dl_path": "RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import ubpa.iocr as iocr",
+		"py_fun": "iocr.general_recognize(%s)"
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"node_gen": {
+		"ID": "EnumWidget_PythonModuleItem",
+		"Class": "EnumWidget_PythonModuleItem"
+	},
+	"node_panel": {
+		"NodeTitle": "",
+		"NodeDesc": "",
+		"NodeMenuGroup": "",
+		"NodeIcon": "../../images/NodeWidget/N_icon_assembly_python_16px.png",
+		"IsPickup": "0",
+		"IsPreview": "0",
+		"PinMSide": "LR",
+		"NodeMenuPos": "11",
+		"NodePinYin": "",
+		"Pins": [
+			{
+				"Pin_Type": "EPin_Ret",
+				"Pin_EnumID": "EPin_Ret1",
+				"Pin_ItemName": "com.Custom_df001.node_panel.Pin_ItemName1",
+				"Pin_Side": "R",
+				"Pin_GroupID": "-1"
+			}
+		]
+	},
+	"node_property": {
+		"HasGenItem": "1",
+		"ItemTitle": "",
+		"Items": [
+			{
+				"Item_Type": "EIT_MLineedit",
+				"Item_ParName": "sz_tag=",
+				"Item_Name": "",
+				"Item_EnumID": "Tag",
+				"Item_Value": "",
+				"Item_ExtCheck": "",
+				"Item_Maxlen": "128",
+				"Item_Minlen": "1",
+				"Item_IsNumber": "0",
+				"Item_NotPanel": "1",
+				"Item_DataType": "string",
+				"Item_GroupID": "-1"
+			}
+		]
+	},
+	"node_python": {
+		"dl_funs": "RPANodes_GenPyCodes",
+		"dl_path": "RPANodeCompileFun_x64_mt.dll",
+		"py_import": "import importlib\nfrom iresource import iSResource",
+		"py_fun": "%1 = importlib.import_module(\"modules.%2\")"
+	}
+}
