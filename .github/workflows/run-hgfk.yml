@@ -1,48 +1,29 @@
+name: 每月28号14点运行 hgfk.py
+on:
+  schedule:
+    - cron: '0 6 28 * *'
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: windows-latest  # ✅ Windows 环境
+    steps:
+      - name: 拉取仓库代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python 3.13 环境  # ✅ Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: 安装所有依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pillow numpy opencv-python
+
       - name: 执行脚本（Windows环境）
         run: |
-          # 创建启动脚本，控制模块搜索顺序
-          python -c "
-import sys
-import os
-
-print('当前工作目录:', os.getcwd())
-print('Python路径顺序:')
-
-# 先获取系统Python路径
-system_paths = []
-custom_paths = []
-
-for path in sys.path:
-    if 'site-packages' in path or 'lib\\python' in path.lower():
-        system_paths.append(path)
-    else:
-        custom_paths.append(path)
-
-# 重新构建sys.path：系统路径在前，然后是当前目录的Lib
-new_sys_path = []
-new_sys_path.extend(system_paths)  # 系统路径优先
-new_sys_path.append(os.path.join(os.getcwd(), 'Lib'))  # 添加Lib目录
-new_sys_path.extend(custom_paths)   # 其他自定义路径
-
-sys.path = new_sys_path
-
-print('调整后的路径:')
-for i, path in enumerate(sys.path):
-    print(f'  {i}: {path}')
-
-print()
-print('尝试导入ubpa.encrypt...')
-try:
-    from ubpa.encrypt import decrypt
-    print('✅ 导入成功!')
-    print('decrypt函数类型:', type(decrypt))
-except Exception as e:
-    print(f'❌ 导入失败: {e}')
-    import traceback
-    traceback.print_exc()
-    sys.exit(1)
-
-# 运行主脚本
-print('开始运行hgfk.py...')
-exec(open('hgfk.py').read())
-          "
+          # Windows PowerShell语法
+          # 设置PYTHONPATH为当前目录，这样from ubpa.encrypt会正确解析
+          $env:PYTHONPATH = "$env:PYTHONPATH;$pwd\Lib"
+          python hgfk.py
