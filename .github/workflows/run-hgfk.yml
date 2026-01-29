@@ -1,33 +1,32 @@
 name: 每月28号14点运行 hgfk.py
 on:
   schedule:
-    - cron: '0 6 28 * *'
-  workflow_dispatch:
+    - cron: '0 6 28 * *'  # UTC时间6点 = 北京时间14点
+  workflow_dispatch:       # 保留手动触发功能
 
 jobs:
   run-script:
-    runs-on: windows-2019  # 用和你本地更接近的Windows 2019环境
+    runs-on: windows-latest  # Windows 最新环境
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置32位Python 3.8环境
+      - name: 配置 32位 Python 3.13 环境
         uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
-          architecture: 'x86'
+          python-version: '3.13'
+          architecture: 'x86'  # 关键：指定32位Python
 
       - name: 安装所有依赖
         run: |
           python -m pip install --upgrade pip
           pip install requests pillow numpy opencv-python
-          # 安装VC++运行时库，解决底层依赖问题
-          choco install vcredist2019 -y
+          # 可选：安装32位VC运行时（解决32位依赖问题）
+          choco install vcredist2022 -y --forcex86
 
-      - name: 执行脚本（完整依赖加载）
+      - name: 执行脚本（Windows 32位环境）
         run: |
-          # 指向上传的ubpa
-          $env:PYTHONPATH = "$env:PYTHONPATH;$pwd\hgfk\new_ubpa"
-          # 加入DLL路径
-          $env:PATH = "$env:PATH;$pwd\hgfk\new_ubpa\DLLs;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Redist\MSVC\14.29.30133\x86"
+          # 关键：PYTHONPATH 包含仓库根目录 + Lib子目录
+          $env:PYTHONPATH = "$pwd;$pwd\Lib"
+          # 执行目标脚本
           python hgfk.py
