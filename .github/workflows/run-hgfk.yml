@@ -14,7 +14,7 @@ jobs:
       - name: 配置 Python 3.13 环境  # ✅ Python 3.13
         uses: actions/setup-python@v5
         with:
-          python-version: '3.8'
+          python-version: '3.9'
           architecture: 'x86'
 
       - name: 安装所有依赖
