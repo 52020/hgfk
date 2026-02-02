@@ -24,8 +24,10 @@ jobs:
           pip install requests Pillow numpy opencv-python
         shell: pwsh
 
-      - name: 运行脚本（添加Lib目录到Python路径）
+      - name: 运行脚本（添加依赖路径）
         run: |
-          # 把仓库里的Lib目录加入Python搜索路径，这样就能找到ubpa模块
+          # 1. 把仓库里的DLLs目录加入系统PATH，确保能找到ubpa依赖的DLL
+          $env:PATH = "$(Get-Location)\DLLs;$env:PATH"
+          # 2. 把仓库里的Lib目录加入Python路径，确保能找到ubpa模块
           python -c "import sys; sys.path.append('.\\Lib'); import hgfk"
         shell: pwsh
