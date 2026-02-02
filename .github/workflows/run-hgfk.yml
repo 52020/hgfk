@@ -15,11 +15,17 @@ jobs:
       - name: 安装官方32位Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.8'  # 匹配你本地Python版本
-          architecture: 'x86'     # 明确安装32位版本
+          python-version: '3.8'
+          architecture: 'x86'
 
-      - name: 运行脚本（用官方32位Python）
+      - name: 安装所有第三方依赖
         run: |
-          # 把仓库里的依赖目录加入Python路径
-          python -c "import sys; sys.path.append('.\\Lib'); import hgfk"
+          python -m pip install --upgrade pip
+          pip install requests Pillow numpy opencv-python
+        shell: pwsh
+
+      - name: 运行脚本
+        run: |
+          # 把仓库根目录加入Python路径，确保能找到ubpa等自定义模块
+          python -c "import sys; sys.path.append('.'); import hgfk"
         shell: pwsh
