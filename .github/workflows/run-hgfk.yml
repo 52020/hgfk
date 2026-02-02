@@ -2,18 +2,24 @@ name: 每月25号8点自动运行
 
 on:
   schedule:
-    # UTC 时间 0 点 = 北京时间 8 点，每月25号执行
-    - cron: '0 0 25 * *'
-  workflow_dispatch:  
+    - cron: '0 0 25 * *'  # 北京时间每月25号8点
+  workflow_dispatch:
 
 jobs:
   run-script:
-    runs-on: windows-latest  
+    runs-on: windows-latest
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 运行脚本（使用仓库内的python.exe）
-        run: |          
-          .\python.exe .\hgfk.py
-        shell: cmd
+      - name: 安装官方32位Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.8'  # 匹配你本地Python版本
+          architecture: 'x86'     # 明确安装32位版本
+
+      - name: 运行脚本（用官方32位Python）
+        run: |
+          # 把仓库里的依赖目录加入Python路径
+          python -c "import sys; sys.path.append('.\\Lib'); import hgfk"
+        shell: pwsh
