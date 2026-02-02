@@ -1,30 +1,20 @@
-name: 每月28号14点运行 hgfk.py
+name: 每月25号8点自动运行
+
 on:
   schedule:
-    - cron: '0 6 28 * *'
-  workflow_dispatch:
+    # UTC 时间 0 点 = 北京时间 8 点，每月25号执行
+    - cron: '0 0 25 * *'
+  workflow_dispatch:  # 保留手动触发，方便测试
 
 jobs:
   run-script:
-    runs-on: windows-latest  # ✅ Windows 环境
+    runs-on: windows-latest  # 必须用Windows环境来运行exe文件
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 配置 Python 3.13 环境  # ✅ Python 3.13
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.9'
-          architecture: 'x86'
-
-      - name: 安装所有依赖
+      - name: 运行脚本（使用仓库内的python.exe）
         run: |
-          python -m pip install --upgrade pip
-          pip install requests pillow numpy opencv-python
-
-      - name: 执行脚本（Windows环境）
-        run: |
-          # Windows PowerShell语法
-          # 设置PYTHONPATH为当前目录，这样from ubpa.encrypt会正确解析
-          $env:PYTHONPATH = "$pwd\Lib"
-          python hgfk.py
+          # 直接调用仓库根目录下的python.exe来运行hgfk.py
+          .\python.exe .\hgfk.py
+        shell: cmd
