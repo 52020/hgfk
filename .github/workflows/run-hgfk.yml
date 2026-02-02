@@ -4,17 +4,16 @@ on:
   schedule:
     # UTC 时间 0 点 = 北京时间 8 点，每月25号执行
     - cron: '0 0 25 * *'
-  workflow_dispatch:  # 保留手动触发，方便测试
+  workflow_dispatch:  
 
 jobs:
   run-script:
-    runs-on: windows-latest  # 必须用Windows环境来运行exe文件
+    runs-on: windows-latest  
     steps:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
       - name: 运行脚本（使用仓库内的python.exe）
-        run: |
-          # 直接调用仓库根目录下的python.exe来运行hgfk.py
+        run: |          
           .\python.exe .\hgfk.py
         shell: cmd
