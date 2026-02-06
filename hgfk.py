@@ -10,7 +10,7 @@ import json
 from PIL import Image
 import numpy as np
 import os
-from ubpa.encrypt import decrypt
+
 import cv2
 from io import BytesIO
 from PIL import Image
@@ -31,11 +31,7 @@ Str_File_Path = r"./2026年度培训宣传会议记录本模板(后缀1去掉).z
 
 #获取token
 def getAppToken():
-    AppIdTxt='i01NjYwOTI2KiMIyoxMjQyODAzM='
-    AppId = decrypt(AppIdTxt) 
-    AppSecretTxt='MkMyOEUzQzhDQjYyODI3NiojIypDOThFNzJBNENGMzUzNTJE'
-    AppSecret=decrypt(AppSecretTxt)
-    url=f'https://lanxin.picc.com:10443/open/apigw/v1/apptoken/create?grant_type=client_credential&appid={AppId}&secret={AppSecret}'
+    url=f'https://lanxin.picc.com:10443/open/apigw/v1/apptoken/create?grant_type=client_credential&appid=12428032-5660926&secret=C98E72A4CF35352D2C28E3C8CB628276'
     # "https://lanxintest.picc.com:10443/open/apigw"
     response = requests.get(url)
     if response.status_code == 200:
