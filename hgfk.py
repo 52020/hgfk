@@ -15,8 +15,8 @@ import cv2
 from io import BytesIO
 from PIL import Image
 
-Str_Webhook_URL = r'https://lanxin.picc.com:10443/open/apigw/v1/bot/hook/messages/create?hook_token=12428032-yzhBCJYn7yEIjOV5RxfBJ3zDmtYn6KbKt7lYLGsGAY5G9T12obBAuKKp2SPz8A8Sog6KD'
-Str_Countersign = r'83F10778D9863F98A985C23D78C4341F'
+Str_Webhook_URL = r'https://lanxin.picc.com:10443/open/apigw/v1/bot/hook/messages/create?hook_token=12428032-YwhX9IpXpvPzFPgkBOasmblOPPsdabYBYtq5VG8uYyrEtxeEmJqTEXlgJCbV3AAt7kJem6cob'
+Str_Countersign = r'8DFBAED0FA9359E5C048060EDF8DB89D'
 Str_Text = '各位好，附件为2026年“五个一"合规风控法治文化培训宣导情况记录本，请大家活动开展后及每月25日时在登记本上记录，每月25日定期发送到本群，每月月底合规部通报开展情况、登记活动台账。大家在年底时可根据台账撰写相关总结报告。'
 Str_File_Path = r"./2026年度培训宣传会议记录本模板(后缀1去掉).zip1"
 # 人保e办发送群消息
