@@ -2,7 +2,7 @@ name: 每月25号8点自动运行
 
 on:
   schedule:
-    - cron: '0 0 25 * *'  # 北京时间每月25号8点
+    - cron: '0 0 25 * *'  # UTC 0点 = 北京时间8点
   workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
       - name: 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 安装官方32位Python
+      - name: 安装官方64位Python 3.8
         uses: actions/setup-python@v5
         with:
           python-version: '3.8'
@@ -24,10 +24,8 @@ jobs:
           pip install requests Pillow numpy opencv-python
         shell: pwsh
 
-      - name: 运行脚本（添加依赖路径）
+      - name: 运行脚本
         run: |
-          # 1. 把仓库里的DLLs目录加入系统PATH，确保能找到ubpa依赖的DLL
-          $env:PATH = "$(Get-Location)\DLLs;$env:PATH"
-          # 2. 把仓库里的Lib目录加入Python路径，确保能找到ubpa模块
-          python -c "import sys; sys.path.append('.\\Lib'); import hgfk"
+          # 直接运行主脚本，无需再处理ubpa的DLL和路径
+          python hgfk.py
         shell: pwsh
